@@ -6,4 +6,4 @@ Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /data/faculty.json
 
-Sitemap: https://narain-dass-trust.vercel.app/sitemap.xml
+Sitemap: https://narain-dass-rastogi-trust.vercel.app/sitemap.xml
