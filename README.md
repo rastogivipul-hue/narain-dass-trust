@@ -1,14 +1,42 @@
-# Narain Dass Rastogi Charitable Trust & NDR Schools, Kiratpur — Official Website (v2)
+# Narain Dass Rastogi Charitable Trust & NDR Schools, Kiratpur — Website
 
-Modern-age institutional web portal for **Narain Dass Rastogi Charitable Trust** (Established **09 August 1991**, New Delhi) and its three recognized educational wings in **Mohalla Jhanda, Kiratpur, District Bijnor, Uttar Pradesh (PIN – 246731)**:
+Static site for **Narain Dass Rastogi Charitable Trust** (registered Delhi, 09 August 1991) and its schools in **Mohalla Jhanda, Kiratpur, District Bijnor, U.P. – 246731**, founded **28 March 1990**.
 
-1. **Shri Narayan Das Rastogi Saraswati Shishu Mandir** (Primary Wing — Classes I to V)
-2. **Shri Narayan Das Rastogi Balika Vidya Mandir Junior High School** (Upper Primary Girls' Wing — Classes VI to VIII)
-3. **Shri Narayan Das Rastogi Balika Vidya Mandir Inter College** (Secondary / High School Wing — Classes IX to X, UP Board)
+Live: https://narain-dass-trust.vercel.app/ (Vercel; every push to `main` deploys).
 
-## Key Architectural Highlights (v2)
-- **Tiered Information Architecture:**
-  - **Tier 1 (Public Overview):** Clean, modern presentation of the Trust's 1991 founding legacy by **Late Shri R. B. Rastogi**, 4 Impact Pillars Bento Grid, streamlined milestone timeline, Board of Trustees, collapsible governance directories, and verified statutory status matrix (`12AB`, `80G`, `MCA CSR-1: CSR00117504`, `NGO Darpan: DL/2026/1118189`).
-  - **Tier 2 (On-Requirement Verification Dossier):** Interactive **"Request Certified Document Pack / CSR Dossier"** modal enabling donors, CSR partners, and regulators to request certified copies of statutory orders and full banking remittance coordinates without exposing raw document scans publicly.
-- **Modular Faculty Directory (`/data/faculty.json`):** Add or update teacher profiles in `/data/faculty.json` with zero HTML changes required.
-- **Bilingual Support:** Instant English (`EN`) and Hindi (`हिं`) toggle across the entire experience.
+## Schools
+1. **Shri Narayan Das Rastogi Saraswati Shishu Mandir** — LKG–Class V, co-educational (UDISE+ 09030704709)
+2. **Sri Narayan Das Rastogi Balika Vidya Mandir J.H. School** — girls, Classes VI–VIII (UDISE+ 09030704734)
+3. **Shri Narayan Das Rastogi Balika Vidya Mandir Inter College** — girls, Classes IX–XII, UP Board; High School 2004, Intermediate 2006 (UDISE+ 09030704754)
+
+Principal: Shri Devendra Singh (from 1 Aug 2026). 2026: 348 students, 15 teachers, 2 support staff.
+
+## Statutory
+- PAN AAATN1994L
+- 12AB-equivalent: AAATN1994LE20261, s. 332(8) Income-tax Act 2025 — **provisional**, TY 2026–27 to 2028–29
+- 80G-equivalent: AAATN1994LF20261, s. 354(4) Income-tax Act 2025 — **provisional**, TY 2026–27 to 2028–29
+- CSR-1: CSR00117504 (SRN AC5909859) • NGO Darpan: DL/2026/1118189
+
+## Structure
+- `index.html` — single page (Tailwind Play CDN; no build step yet)
+- `data/faculty.json` — faculty directory, rendered into `#faculty` at runtime
+- `images/campus/` — campus photos (`*.webp` full size, `*-800.webp` thumbnails)
+- `images/payment/` — slot for the bank-issued UPI QR (`upi-qr.png`)
+- `js/qrcode.min.js` — vendored QR generator (qrcode-generator by Kazuhiko Arase, MIT)
+- `llms.txt`, `llms-full.txt`, `sitemap.xml`
+
+## Donations (KYC first)
+The `#donate` section collects donor KYC in the browser (nothing is stored or sent by the site), then shows payment details, then opens a pre-filled email with the UTR for the 80G receipt. Donations go only to the Trust's account at Ujjivan Small Finance Bank, Noida Branch.
+
+To turn on UPI, edit the constants at the top of the script in `index.html`:
+```js
+const UPI_VPA = "";            // set to the Trust's UPI ID to show the UPI block
+const UPI_QR_MODE = "generate"; // or "image" to use images/payment/upi-qr.png
+```
+With `UPI_VPA = ""` only bank transfer is shown.
+
+## Faculty updates
+Edit `data/faculty.json` (same fields per person). Do not add phone numbers, dates of birth or home addresses. Add photos only with the person's consent.
+
+## Photos
+Do not publish photos where children's faces are identifiable until parental consent is on file.
