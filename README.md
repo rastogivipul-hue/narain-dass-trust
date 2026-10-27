@@ -61,3 +61,5 @@ Edit `data/faculty.json` (same fields per person). Do not add phone numbers, dat
 
 ## Photos
 Do not publish photos where children's faces are identifiable until parental consent is on file.
+
+_Last updated: 27 October 2026 (multi-page restructure)._
