@@ -1,8 +1,19 @@
 # Narain Dass Rastogi Charitable Trust & NDR Schools, Kiratpur — Full Reference
 
-Canonical site: https://narain-dass-trust.vercel.app/
+Canonical site: https://narain-dass-rastogi-trust.vercel.app/
 Last updated: 27 October 2026
 Sources: the Principal's letter to the Trust on the school's history (dated 11 July 2026) and the Trust's donor-details document (registration and bank details).
+
+## Pages
+- [Home](https://narain-dass-rastogi-trust.vercel.app/): overview, key school figures (school records, 2026), latest news.
+- [Our Story](https://narain-dass-rastogi-trust.vercel.app/story): founder Late Shri R. B. Rastogi, milestones 1990–2026, why Kiratpur (Census 2011), alumni stories.
+- [Schools & Faculty](https://narain-dass-rastogi-trust.vercel.app/schools): the three schools, UDISE+ names and codes, faculty, results, admissions enquiry.
+- [Campus](https://narain-dass-rastogi-trust.vercel.app/campus): photo gallery.
+- [Trust & Governance](https://narain-dass-rastogi-trust.vercel.app/trust): trustees, management committee, statutory registrations, verification links, transparency.
+- [News & Updates](https://narain-dass-rastogi-trust.vercel.app/news): dated updates, newest first.
+- [Support Us](https://narain-dass-rastogi-trust.vercel.app/support): donate with 80G receipt (KYC first), CSR partnership, volunteer & mentor, donor acknowledgements.
+- [Contact](https://narain-dass-rastogi-trust.vercel.app/contact): addresses, map, emails, enquiry form.
+- [Privacy Policy](https://narain-dass-rastogi-trust.vercel.app/privacy): how donor and enquiry data is handled (effective 27 October 2026).
 
 ## 1. The Trust
 - Legal name: Narain Dass Rastogi Charitable Trust (श्री नारायण दास रस्तोगी चैरिटेबल ट्रस्ट). Bank account name: NARAIN DAS RASTOGI CHARITABLE TRUST.
@@ -10,7 +21,7 @@ Sources: the Principal's letter to the Trust on the school's history (dated 11 J
 - Registered office: 1/5430, Basti Harphool Singh, Sadar Bazar, Delhi – 110006.
 - Email: naraindassrastogicharitabletrust@outlook.com
 - Founder: Late Shri R. B. Rastogi, lifelong head of the Trust.
-- Board of Trustees: Shri Subhash Rastogi (Chairman & Managing Trustee), Shri Ravinder Kumar Rastogi (Senior Trustee), Shri Vipul Kumar Rastogi (Trustee).
+- Board of Trustees: Shri Subhash Rastogi (Chairman & Managing Trustee; joined the Board in 2025 and heads the revival and growth of the school and the Trust), Shri Ravinder Kumar Rastogi (Senior Trustee), Shri Vipul Kumar Rastogi (Trustee), Smt. Kanika Rastogi (Trustee – Creative Direction & Development; one of the new trust members).
 - Educational society: Shri Narayandas Rastogi Aadarsh Shiksha Samiti. A School Management Committee has existed since January 1992.
 
 ## 2. Statutory status (as of October 2026)
@@ -49,7 +60,7 @@ Late Shri R. B. Rastogi was born in Kiratpur (Bijnor) on 12 December 1932, son o
   - Sri Narayan Das Rastogi Balika Vidya Mandir J.H. School (girls, VI–VIII): 09030704734
   - Shri Narayan Das Rastogi Balika Vidya Mandir Inter College (girls, IX–XII): 09030704754
 - Address: Mohalla Jhanda, Kiratpur – 246731, District Bijnor, Uttar Pradesh. Email: ndrgicktp@gmail.com
-- Faculty list (names, roles, subjects): https://narain-dass-trust.vercel.app/data/faculty.json
+- Faculty list (names, roles, subjects): https://narain-dass-rastogi-trust.vercel.app/data/faculty.json
 
 ## 6. Donating
 - Donations and CSR funds are accepted only in the Trust's own account: NARAIN DAS RASTOGI CHARITABLE TRUST, Ujjivan Small Finance Bank, Noida Branch. Full account details are shown on the website after the donor completes the KYC step (name, PAN, address with PIN, mobile, email, amount, purpose).
@@ -62,3 +73,16 @@ Late Shri R. B. Rastogi was born in Kiratpur (Bijnor) on 12 December 1932, son o
 - NGO Darpan: https://ngodarpan.gov.in/
 - Ministry of Corporate Affairs: https://www.mca.gov.in/
 - Income Tax e-filing: https://www.incometax.gov.in/
+
+## 8. Official UDISE+ names (as on the government record)
+- 09030704709: Narayan Das Rastogi Sarswati Shishu Mandir (primary)
+- 09030704734: Sri Narayan Das Rastogi Balika Vidya Mandir J.H. School (junior high)
+- 09030704754: Shri Narayan Das Rastogi Balika Vidhya Mandir Inter College (inter college)
+
+## 9. Why Kiratpur (Census 2011)
+- Bijnor district: female literacy 59.72%, male 76.56%; child sex ratio 883. Source: https://www.census2011.co.in/census/district/505-bijnor.html
+- Kiratpur town (NPP + OG): population 61,946; literacy about 56% against the district's 68.48%. Source: https://www.citypopulation.de/en/india/uttarpradesh/bijnor/0940305000__kiratpur/
+
+## 10. Contact
+- School: Mohalla Jhanda, Kiratpur – 246731, District Bijnor, U.P. Email: ndrgicktp@gmail.com. Map: https://www.google.com/maps/search/?api=1&query=Narain+Dass+Rastogi+Inter+College+Kiratpur+Bijnor
+- Trust: naraindassrastogicharitabletrust@outlook.com
