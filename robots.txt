@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# AI Assistants & LLM Discovery
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /data/faculty.json
+
+Sitemap: https://narain-dass-trust.vercel.app/sitemap.xml
