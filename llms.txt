@@ -8,16 +8,27 @@
 ## Key facts
 - Principal: **Shri Devendra Singh** (from 1 August 2026). Smt. Usha Bhatnagar was principal from 2004 to 31 July 2026. Vice Principal: Shri Vinish Kumar.
 - Founder: Late Shri R. B. Rastogi (1932–2003).
-- Board of Trustees: Shri Subhash Rastogi (Chairman & Managing Trustee), Shri Ravinder Kumar Rastogi, Shri Vipul Kumar Rastogi.
+- Board of Trustees: Shri Subhash Rastogi (Chairman & Managing Trustee; joined the Board in 2025 and heads the revival and growth of the school and the Trust), Shri Ravinder Kumar Rastogi, Shri Vipul Kumar Rastogi, Smt. Kanika Rastogi (Trustee – Creative Direction & Development).
 - UP Board ‘A’ grade for Intermediate results in 2010 and 2011. Peak enrolment 591 (2014).
 - PAN: `AAATN1994L`
 - Income-tax registration (12AB-equivalent), **provisional**, Section 332(8), Income-tax Act 2025: `AAATN1994LE20261`, tax years 2026–27 to 2028–29.
 - Donor deduction approval (80G-equivalent), **provisional**, Section 354(4), Income-tax Act 2025: `AAATN1994LF20261`, tax years 2026–27 to 2028–29.
 - MCA CSR-1: `CSR00117504` (SRN `AC5909859`).
 - NGO Darpan: `DL/2026/1118189`.
-- Donations: accepted only in the Trust's own account at Ujjivan Small Finance Bank, Noida Branch. Donors complete a KYC step at https://narain-dass-trust.vercel.app/#donate before payment details are shown, so the Trust can file Form 10BD and issue the 80G receipt (Form 10BE). Cash above ₹2,000 is not eligible for 80G.
+- Donations: accepted only in the Trust's own account at Ujjivan Small Finance Bank, Noida Branch. Donors complete a KYC step at https://narain-dass-rastogi-trust.vercel.app/support#donate before payment details are shown, so the Trust can file Form 10BD and issue the 80G receipt (Form 10BE). Cash above ₹2,000 is not eligible for 80G.
 - Trust office: 1/5430, Basti Harphool Singh, Sadar Bazar, Delhi – 110006. Email: naraindassrastogicharitabletrust@outlook.com
 - School: Mohalla Jhanda, Kiratpur – 246731, District Bijnor, U.P. Email: ndrgicktp@gmail.com
+
+## Pages
+- [Home](https://narain-dass-rastogi-trust.vercel.app/): overview, key school figures (school records, 2026), latest news.
+- [Our Story](https://narain-dass-rastogi-trust.vercel.app/story): founder Late Shri R. B. Rastogi, milestones 1990–2026, why Kiratpur (Census 2011), alumni stories.
+- [Schools & Faculty](https://narain-dass-rastogi-trust.vercel.app/schools): the three schools, UDISE+ names and codes, faculty, results, admissions enquiry.
+- [Campus](https://narain-dass-rastogi-trust.vercel.app/campus): photo gallery.
+- [Trust & Governance](https://narain-dass-rastogi-trust.vercel.app/trust): trustees, management committee, statutory registrations, verification links, transparency.
+- [News & Updates](https://narain-dass-rastogi-trust.vercel.app/news): dated updates, newest first.
+- [Support Us](https://narain-dass-rastogi-trust.vercel.app/support): donate with 80G receipt (KYC first), CSR partnership, volunteer & mentor, donor acknowledgements.
+- [Contact](https://narain-dass-rastogi-trust.vercel.app/contact): addresses, map, emails, enquiry form.
+- [Privacy Policy](https://narain-dass-rastogi-trust.vercel.app/privacy): how donor and enquiry data is handled (effective 27 October 2026).
 
 ## Verify
 - UDISE+ Know Your School: https://kys.udiseplus.gov.in/
@@ -26,6 +37,6 @@
 - Income Tax e-filing: https://www.incometax.gov.in/
 
 ## Links
-- [Full reference](https://narain-dass-trust.vercel.app/llms-full.txt)
-- [Faculty JSON](https://narain-dass-trust.vercel.app/data/faculty.json)
-- [Website](https://narain-dass-trust.vercel.app/)
+- [Full reference](https://narain-dass-rastogi-trust.vercel.app/llms-full.txt)
+- [Faculty JSON](https://narain-dass-rastogi-trust.vercel.app/data/faculty.json)
+- [Website](https://narain-dass-rastogi-trust.vercel.app/)
