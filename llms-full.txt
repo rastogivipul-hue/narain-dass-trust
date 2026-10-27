@@ -1,35 +1,64 @@
-# Narain Dass Rastogi Charitable Trust & NDR Schools, Kiratpur
+# Narain Dass Rastogi Charitable Trust & NDR Schools, Kiratpur — Full Reference
 
-> **Narain Dass Rastogi Charitable Trust** (श्री नारायण दास रस्तोगी चैरिटेबल ट्रस्ट; Established **09 August 1991**, New Delhi) is an irrevocable Indian public charitable trust dedicated to K–12 education, girl child empowerment, clean campus infrastructure, and rural upliftment. In **Mohalla Jhanda, Kiratpur (District Bijnor, Uttar Pradesh – 246731)**, the Trust and its educational society (**Shri Narayandas Rastogi Aadarsh Shiksha Samiti**) operate three recognized educational wings serving students from Primary to High School without taking government grants for over 35 years:
-> 1. **Shri Narayan Das Rastogi Saraswati Shishu Mandir** (Primary Wing — Classes I to V, Basic Shiksha Parishad Permanently Recognized since 1997)
-> 2. **Shri Narayan Das Rastogi Balika Vidya Mandir Junior High School** (Upper Primary Girls' Wing — Classes VI to VIII, Basic Shiksha Parishad Recognized since 2002)
-> 3. **Shri Narayan Das Rastogi Balika Vidya Mandir Inter College** (Secondary / High School Wing — Classes IX to X, UP Board Recognized since 2004)
+Canonical site: https://narain-dass-trust.vercel.app/
+Last updated: 27 October 2026
+Sources: the Principal's letter to the Trust on the school's history (dated 11 July 2026) and the Trust's donor-details document (registration and bank details).
 
-## Institutional Overview & Governance
-- **Trust Legal Name:** Narain Dass Rastogi Charitable Trust
-- **Year of Establishment:** 1991 (09 August 1991, New Delhi)
-- **Legal Character:** Irrevocable Public Charitable Trust
-- **Guiding Motto:** *"सेवा ही जीवन है • तमसो मा ज्योतिर्गमय"* (Service is Life • Lead me from darkness to light)
-- **Founder President (1991):** Late Shri R. B. Rastogi (Co-Founders: Late Shri Raj Bahadur Rastogi & Late Shri Satish Chandra Rastogi)
-- **Board of Trustees (Apex Governing Body):**
-  - **Shri Ravinder Kumar Rastogi** — Senior Founding Trustee (Since 1991)
-  - **Shri Subhash Rastogi** — Managing Trustee & Chairman
-  - **Shri Vipul Kumar Rastogi** — Trustee & Institutional Modernization Lead
-- **Campus Academic Leadership:**
-  - **Shri Devendra Singh** — Principal (प्रधानाचार्य), NDR Balika Vidya Mandir Inter College
-  - **Dr. Kuldeep Rastogi** — Local Campus Guardian, Kiratpur
+## 1. The Trust
+- Legal name: Narain Dass Rastogi Charitable Trust (श्री नारायण दास रस्तोगी चैरिटेबल ट्रस्ट). Bank account name: NARAIN DAS RASTOGI CHARITABLE TRUST.
+- Registered: 09 August 1991, Sub-Registrar, Delhi (Reg. 3315 & 1812). Public charitable trust.
+- Registered office: 1/5430, Basti Harphool Singh, Sadar Bazar, Delhi – 110006.
+- Email: naraindassrastogicharitabletrust@outlook.com
+- Founder: Late Shri R. B. Rastogi, lifelong head of the Trust.
+- Board of Trustees: Shri Subhash Rastogi (Chairman & Managing Trustee), Shri Ravinder Kumar Rastogi (Senior Trustee), Shri Vipul Kumar Rastogi (Trustee).
+- Educational society: Shri Narayandas Rastogi Aadarsh Shiksha Samiti. A School Management Committee has existed since January 1992.
 
-## Tier 1 Public Compliance Summary
-- **Income Tax Section 12AB:** Active & Verified (Charitable Trust Registration)
-- **Income Tax Section 80G:** Active & Verified (50% Tax Deduction Eligible for Donors)
-- **Ministry of Corporate Affairs (MCA) Form CSR-1:** Active & Verified (`CSR00117504`)
-- **NITI Aayog NGO Darpan Portal:** Registered & Active (`DL/2026/1118189`)
-- **State Educational Recognition:** UP Board (Madhyamik Shiksha Parishad) & Basic Shiksha Parishad, U.P.
+## 2. Statutory status (as of October 2026)
+- PAN: AAATN1994L
+- Income-tax registration (successor to Section 12AB): PROVISIONAL, Section 332(8), Income-tax Act 2025. Number AAATN1994LE20261 (document ID AAATN1994LE2026101), dated 25 June 2026, valid for tax years 2026–27 to 2028–29.
+- Donor deduction approval (successor to Section 80G): PROVISIONAL, Section 354(4), Income-tax Act 2025. Number AAATN1994LF20261 (document ID AAATN1994LF2026102), dated 25 June 2026, valid for tax years 2026–27 to 2028–29.
+- MCA Form CSR-1: CSR00117504 (SRN AC5909859).
+- NITI Aayog NGO Darpan: DL/2026/1118189.
 
-## Tier 2 Statutory Dossier & Banking Coordinates (On Verified Requirement)
-Certified statutory orders (12AB/80G certificates, MCA CSR-1 registration letter, Trust Deeds, UP Board recognition orders, audited statements, and official banking remittance coordinates) are shared directly with verified donors, CSR committees, and regulatory authorities via the website's **Request Statutory Dossier / CSR Pack** portal or via `naraindassrastogicharitabletrust@outlook.com`.
+## 3. Founder
+Late Shri R. B. Rastogi was born in Kiratpur (Bijnor) on 12 December 1932, son of Shri Badri Prasad Rastogi and Smt. Bala Sundari; his wife was Smt. Shakuntala Devi Rastogi. He studied up to Class IV in Kiratpur, moved to Delhi with his father at ten, and completed an M.A. in English in 1952. He was an English lecturer at Gandhi Inter College, Dhanaura (J.P. Nagar) from 1953 to 1960 and a principal from 1960 to 1985. After retirement he devoted himself to religious and public-welfare work. He passed away in Dubai on 9 February 2003.
 
-## Key Links
-- [Full Institutional Reference](/llms-full.txt)
-- [Modular School Faculty Feed](/data/faculty.json)
-- [Official Portal](/)
+## 4. The school: history
+- 28 March 1990 (Chaitra Sudi 2, Samvat 2047, Wednesday): school founded by Late Shri R. B. Rastogi together with his brothers (sons of Shri Badri Prasad Rastogi, Delhi). Primary education only at first.
+- 18 July 1990: first session began with 9 children in LKG; monthly fee ₹25; three rooms. First principal Shri Yogeshwar Bhatnagar; Smt. Usha Bhatnagar assistant teacher.
+- January 1992: School Management Committee formed.
+- 1993: four more rooms built by the founder; adjoining land purchased.
+- 1996–97: permanent recognition of the primary section (Basic Shiksha Parishad).
+- 2002: Junior High recognition for girls only, at parents' strong request (Basic Shiksha Parishad).
+- 2004: High School recognition from Madhyamik Shiksha Parishad, U.P. Smt. Usha Bhatnagar principal from 2004.
+- 2005: Shri Ravinder Kumar Rastogi (Delhi) built the physics and chemistry laboratories and two classrooms.
+- 2006: Intermediate (Classes XI–XII) recognition after sustained effort by the staff. The then MLA Shri Kunwar Bharatendu Singh gave ₹1 lakh from his MLA fund for the science laboratory.
+- 2010 and 2011: ‘A’ grade from Madhyamik Shiksha Parishad, U.P. for excellent Intermediate results.
+- 2008–2023: solar lights received twice from Teachers' MLC Dr. Hari Singh Dhillon.
+- 1 April 2026: smart TV donated for the smart class by Shri Umesh Gupta, Pune (Maharashtra). Smart class launched July 2026.
+- 31 July 2026: Smt. Usha Bhatnagar completed her tenure as principal.
+- 1 August 2026: Shri Devendra Singh became principal. Shri Devendra Singh and Vice Principal Shri Vinish Kumar played a leading role in obtaining recognition from Junior to senior level.
+- The school buildings were made possible chiefly by the founding president of the management committee and his family.
+- Other benefactor: Dr. Kuldeep Rastogi, Mohalla Jhanda, Kiratpur (drinking-water cooler).
+
+## 5. The school today (2026)
+- 348 students (LKG–XII, including primary), 15 teachers, 2 support staff.
+- Enrolment: 9 in 1990; peak 591 in 2014; 348 in 2026.
+- Wings and UDISE+ codes:
+  - Narayan Das Rastogi Saraswati Shishu Mandir (primary, co-educational): 09030704709
+  - Sri Narayan Das Rastogi Balika Vidya Mandir J.H. School (girls, VI–VIII): 09030704734
+  - Shri Narayan Das Rastogi Balika Vidya Mandir Inter College (girls, IX–XII): 09030704754
+- Address: Mohalla Jhanda, Kiratpur – 246731, District Bijnor, Uttar Pradesh. Email: ndrgicktp@gmail.com
+- Faculty list (names, roles, subjects): https://narain-dass-trust.vercel.app/data/faculty.json
+
+## 6. Donating
+- Donations and CSR funds are accepted only in the Trust's own account: NARAIN DAS RASTOGI CHARITABLE TRUST, Ujjivan Small Finance Bank, Noida Branch. Full account details are shown on the website after the donor completes the KYC step (name, PAN, address with PIN, mobile, email, amount, purpose).
+- After paying, the donor sends the UTR/transaction reference by email from the website so the Trust can file Form 10BD and issue the 80G receipt (Form 10BE), or the equivalent forms under the Income-tax Act, 2025.
+- Cash donations above ₹2,000 are not eligible for 80G deduction.
+- Purposes: General, Fee concession for girls, Smart classroom, Infrastructure, CSR.
+
+## 7. Verify
+- UDISE+ Know Your School: https://kys.udiseplus.gov.in/
+- NGO Darpan: https://ngodarpan.gov.in/
+- Ministry of Corporate Affairs: https://www.mca.gov.in/
+- Income Tax e-filing: https://www.incometax.gov.in/
