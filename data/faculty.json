@@ -3,15 +3,15 @@
   "lastUpdated": "2026-10-27",
   "academicSession": "2026–2027",
   "bannerNotice": {
-    "en": "Faculty & Staff Directory — Principal & Sanctioned Academic Departments are live below. Individual teacher bio-profiles, qualifications, and photographs for the 2026–27 Academic Session are currently being compiled from Kiratpur campus records and will be updated shortly.",
-    "hi": "शिक्षक एवं प्रशासनिक निर्देशिका — प्रधानाचार्य एवं स्वीकृत शैक्षणिक विभागों का विवरण नीचे उपलब्ध है। शैक्षणिक सत्र २०२६–२७ हेतु समस्त शिक्षक-शिक्षिकाओं के व्यक्तिगत परिचय, योग्यता एवं छायाचित्र संकलित किए जा रहे हैं।"
+    "en": "Faculty & Staff Directory 2026–27 — 15 teachers and 2 support staff, as reported by the school in July 2026. Photographs and fuller profiles will be added with each person's consent.",
+    "hi": "शिक्षक एवं कर्मचारी निर्देशिका 2026–27 — विद्यालय द्वारा जुलाई 2026 में दी गई सूची के अनुसार 15 शिक्षक एवं 2 कर्मचारी। छायाचित्र एवं विस्तृत परिचय सहमति के बाद जोड़े जाएंगे।"
   },
   "principalMessage": {
     "name": "Shri Devendra Singh",
     "nameHi": "श्री देवेन्द्र सिंह",
     "designation": "Principal (प्रधानाचार्य)",
-    "institution": "Shri Narayandas Rastogi Balika Vidya Mandir Inter College & Saraswati Shishu Mandir, Kiratpur (Bijnor)",
-    "phone": "+91 8954869291 / +91 9756247133",
+    "institution": "Shri Narayan Das Rastogi Balika Vidya Mandir Inter College & Saraswati Shishu Mandir, Kiratpur (Bijnor)",
+    "phone": "",
     "email": "ndrgicktp@gmail.com",
     "quoteEn": "For over three decades, our sacred Vidya Mandir in Mohalla Jhanda, Kiratpur has stood as a beacon of affordable, value-rooted education—especially for daughters and children from underserved families of Bijnor district. With the renewed vision of Chairman Shri Subhash Rastogi, Senior Trustee Shri Ravinder Kumar Rastogi, and Trustee Shri Vipul Kumar Rastogi, our campus is entering a transformative era with pure 260-ft deep-borewell drinking water, upgraded computer literacy labs, and modern academic infrastructure.",
     "quoteHi": "तीन दशकों से अधिक समय से, मोहल्ला झण्डा, कीरतपुर स्थित हमारा यह पावन विद्या मन्दिर जनपद बिजनौर की बेटियों एवं वंचित वर्ग के बच्चों के लिए संस्कारयुक्त एवं सुलभ शिक्षा का प्रमुख केंद्र रहा है। ट्रस्ट मण्डल के नूतन संकल्प एवं सहयोग से विद्यालय परिसर में शुद्ध पेयजल (२६० फीट सबमर्सिबल बोरवेल), कम्प्यूटर शिक्षा एवं आधुनिक शैक्षणिक सुविधाओं का निरंतर विस्तार किया जा रहा है।"
@@ -21,21 +21,57 @@
       "id": "prin-devendra-singh",
       "name": "Shri Devendra Singh",
       "nameHi": "श्री देवेन्द्र सिंह",
-      "role": "Principal (प्रधानाचार्य)",
+      "role": "Principal (प्रधानाचार्य) — from 1 August 2026",
       "department": "Administration & Academic Leadership",
-      "wing": "All Wings (Shishu Mandir, Junior High & Inter College)",
-      "qualifications": "M.A., B.Ed. — Academic & Institutional Head",
-      "experience": "Senior Educational Administrator, Kiratpur Campus",
+      "wing": "All wings",
+      "qualifications": "M.A. (Geography), B.Com.",
+      "experience": "With the school since 1997; key role in securing senior-level recognition",
       "subjects": [
-        "Institutional Administration",
-        "Academic Supervision",
-        "Student Welfare"
+        "Geography"
       ],
-      "contact": "ndrgicktp@gmail.com | +91 8954869291",
+      "contact": "ndrgicktp@gmail.com",
       "photo": null,
       "initials": "DS",
       "status": "verified",
-      "badge": "Head of Institution"
+      "badge": "Principal"
+    },
+    {
+      "id": "vp-vinish-kumar",
+      "name": "Shri Vinish Kumar",
+      "nameHi": "श्री विनिश कुमार",
+      "role": "Vice Principal (उप प्रधानाचार्य)",
+      "department": "Administration & Academic Leadership",
+      "wing": "All wings",
+      "qualifications": "M.A. (Economics), Book-keeping",
+      "experience": "With the school since 1991",
+      "subjects": [
+        "Economics",
+        "Book-keeping"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "VK",
+      "status": "verified",
+      "badge": "Vice Principal"
+    },
+    {
+      "id": "emeritus-usha-bhatnagar",
+      "name": "Smt. Usha Bhatnagar",
+      "nameHi": "श्रीमती ऊषा भटनागर",
+      "role": "Principal 2004 – 31 July 2026",
+      "department": "Administration & Academic Leadership",
+      "wing": "All wings",
+      "qualifications": "B.Ed. (Sociology, Economics)",
+      "experience": "Founding teacher from the first session in 1990; Principal from 2004 until 31 July 2026",
+      "subjects": [
+        "Sociology",
+        "Economics"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "UB",
+      "status": "emeritus",
+      "badge": "Former Principal"
     },
     {
       "id": "campus-signatory-kuldeep-rastogi",
@@ -51,174 +87,292 @@
         "Community Outreach",
         "Institutional Operations"
       ],
-      "contact": "Mohalla Jhanda, Kiratpur, Bijnor",
+      "contact": "ndrgicktp@gmail.com",
       "photo": "/images/members/kuldeep-rastogi.jpg",
       "initials": "KR",
       "status": "verified",
       "badge": "Campus Guardian"
     },
     {
-      "id": "emeritus-yogesh-kumar",
-      "name": "Shri Yogesh Kumar",
-      "nameHi": "श्री योगेश कुमार",
-      "role": "Founding Pradhanacharya (Emeritus Record)",
+      "id": "emeritus-yogeshwar-bhatnagar",
+      "name": "Shri Yogeshwar Bhatnagar",
+      "nameHi": "श्री योगेश्वर भटनागर",
+      "role": "First Principal (1990 session)",
       "department": "Administration & Academic Leadership",
-      "wing": "Saraswati Shishu Mandir & Junior High Wing (1990s Founding Era)",
-      "qualifications": "Founding Headmaster (प्रधानाचार्य)",
-      "experience": "Led the school during its formative recognition years alongside Late Shri R. B. Rastogi",
-      "subjects": [
-        "Foundational Pedagogy",
-        "Sanskar & Moral Education"
-      ],
-      "contact": "Historical Roll of Honour",
-      "photo": null,
-      "initials": "YK",
-      "status": "verified",
-      "badge": "Founding Era Principal"
-    },
-    {
-      "id": "slot-vice-principal",
-      "name": "Vice Principal / Academic Coordinator",
-      "nameHi": "उप-प्रधानाचार्य / शैक्षणिक समन्वयक",
-      "role": "Senior Secondary & High School Coordinator",
-      "department": "High School & Inter College Wing (Classes IX–XII)",
-      "wing": "Shri Narayandas Rastogi Balika Vidya Mandir Inter College (UP Board)",
-      "qualifications": "Post-Graduate + B.Ed. (Profile details being updated for 2026–27)",
-      "experience": "UP Board Examination & Curriculum Supervision",
-      "subjects": [
-        "UP Board High School & Inter Curriculum",
-        "Girls' Secondary Education"
-      ],
+      "wing": "Saraswati Shishu Mandir (1990)",
+      "qualifications": "Founding Principal (प्रधानाचार्य)",
+      "experience": "Led the school in its first session, 1990",
+      "subjects": [],
       "contact": "ndrgicktp@gmail.com",
       "photo": null,
-      "initials": "VP",
-      "status": "updating",
-      "badge": "2026–27 Profile Updating"
+      "initials": "YB",
+      "status": "emeritus",
+      "badge": "Founding Principal"
     },
     {
-      "id": "slot-science-math-hod",
-      "name": "Senior Faculty — Science & Mathematics",
-      "nameHi": "वरिष्ठ प्रवक्ता / शिक्षक — विज्ञान एवं गणित विभाग",
-      "role": "Department of Science & Mathematics",
-      "department": "High School & Inter College Wing (Classes IX–XII)",
-      "wing": "Balika Vidya Mandir Inter College & Junior High (Sanctioned Science Post)",
-      "qualifications": "M.Sc. / B.Sc., B.Ed. (Individual faculty roster being updated)",
-      "experience": "Secondary & Upper Primary STEM Instruction",
+      "id": "t-sudhir-kumar",
+      "name": "Shri Sudhir Kumar",
+      "nameHi": "श्री सुधीर कुमार",
+      "role": "Assistant Teacher",
+      "department": "Science & Mathematics",
+      "wing": "Kiratpur campus",
+      "qualifications": "B.Sc. (Mathematics, Statistics), B.A. (Economics)",
+      "experience": "With the school since 2010",
       "subjects": [
         "Mathematics",
-        "Physics",
-        "Chemistry",
-        "Biology"
+        "Statistics"
       ],
       "contact": "ndrgicktp@gmail.com",
       "photo": null,
-      "initials": "SM",
-      "status": "updating",
-      "badge": "Sanctioned Cadre"
+      "initials": "SK",
+      "status": "verified",
+      "badge": "Mathematics"
     },
     {
-      "id": "slot-languages-humanities",
-      "name": "Senior Faculty — Hindi, Sanskrit, English & Humanities",
-      "nameHi": "वरिष्ठ शिक्षक — भाषा एवं मानविकी विभाग",
-      "role": "Department of Languages & Social Sciences",
-      "department": "High School & Inter College Wing (Classes IX–XII)",
-      "wing": "Balika Vidya Mandir Inter College & Junior High (Sanctioned Language Post)",
-      "qualifications": "M.A. (Hindi / English / Sanskrit / Social Studies), B.Ed.",
-      "experience": "UP Board Literature, Grammar & Civics Instruction",
+      "id": "t-snehprabha",
+      "name": "Smt. Snehprabha",
+      "nameHi": "श्रीमती स्नेहप्रभा",
+      "role": "Assistant Teacher",
+      "department": "Languages & Social Sciences",
+      "wing": "Kiratpur campus",
+      "qualifications": "Political Science, Hindi, Sanskrit; I.G.T. (Bombay)",
+      "experience": "With the school since 1995",
       "subjects": [
-        "Hindi Sahitya",
-        "Sanskrit",
+        "Political Science",
+        "Hindi",
+        "Sanskrit"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "SP",
+      "status": "verified",
+      "badge": "Languages"
+    },
+    {
+      "id": "t-manju-rani-sharma",
+      "name": "Smt. Manju Rani Sharma",
+      "nameHi": "श्रीमती मंजू रानी शर्मा",
+      "role": "Lecturer (Hindi)",
+      "department": "Languages & Social Sciences",
+      "wing": "Kiratpur campus",
+      "qualifications": "M.A. (Hindi), M.A. (Sanskrit)",
+      "experience": "With the school since 2006",
+      "subjects": [
+        "Hindi",
+        "Sanskrit"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "MS",
+      "status": "verified",
+      "badge": "Hindi Lecturer"
+    },
+    {
+      "id": "t-manju-rani",
+      "name": "Smt. Manju Rani",
+      "nameHi": "श्रीमती मंजू रानी",
+      "role": "Teacher (English)",
+      "department": "Languages & Social Sciences",
+      "wing": "Kiratpur campus",
+      "qualifications": "English; B.Ed.",
+      "experience": "With the school since 2025",
+      "subjects": [
+        "English"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "MR",
+      "status": "verified",
+      "badge": "English"
+    },
+    {
+      "id": "t-tahreem",
+      "name": "Km. Tahreem",
+      "nameHi": "कु. तहरीम",
+      "role": "Assistant Teacher",
+      "department": "Languages & Social Sciences",
+      "wing": "Kiratpur campus",
+      "qualifications": "B.A. (English, History)",
+      "experience": "With the school since 2024",
+      "subjects": [
         "English",
-        "History & Civics",
+        "History"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "TH",
+      "status": "verified",
+      "badge": "Humanities"
+    },
+    {
+      "id": "t-chhavi-gautam",
+      "name": "Km. Chhavi Gautam",
+      "nameHi": "कु. छवि गौतम",
+      "role": "Teacher",
+      "department": "Science & Mathematics",
+      "wing": "Kiratpur campus",
+      "qualifications": "B.Sc. (Chemistry, Mathematics)",
+      "experience": "With the school since 2024",
+      "subjects": [
+        "Chemistry",
+        "Mathematics"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "CG",
+      "status": "verified",
+      "badge": "Science"
+    },
+    {
+      "id": "t-reena-rani",
+      "name": "Km. Reena Rani",
+      "nameHi": "कु. रीना रानी",
+      "role": "Assistant Teacher",
+      "department": "Science & Mathematics",
+      "wing": "Kiratpur campus",
+      "qualifications": "B.Sc. (Chemistry, Zoology, Botany)",
+      "experience": "With the school since 2024",
+      "subjects": [
+        "Chemistry",
+        "Zoology",
+        "Botany"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "RR",
+      "status": "verified",
+      "badge": "Science"
+    },
+    {
+      "id": "t-tanu-rani",
+      "name": "Km. Tanu Rani",
+      "nameHi": "कु. तनु रानी",
+      "role": "Assistant Teacher",
+      "department": "Languages & Social Sciences",
+      "wing": "Kiratpur campus",
+      "qualifications": "B.A. (Hindi, English, Sociology)",
+      "experience": "With the school since 2023",
+      "subjects": [
+        "Hindi",
+        "English",
+        "Social Studies"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "TR",
+      "status": "verified",
+      "badge": "Languages"
+    },
+    {
+      "id": "t-rukhsar-malik",
+      "name": "Km. Rukhsar Malik",
+      "nameHi": "कु. रुखसार मलिक",
+      "role": "Assistant Teacher",
+      "department": "Languages & Social Sciences",
+      "wing": "Kiratpur campus",
+      "qualifications": "B.A. (Urdu, Sociology)",
+      "experience": "With the school since 2017",
+      "subjects": [
+        "Urdu",
+        "Social Studies"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "RM",
+      "status": "verified",
+      "badge": "Languages"
+    },
+    {
+      "id": "t-drishti-giri",
+      "name": "Km. Drishti Giri",
+      "nameHi": "कु. दृष्टि गिरि",
+      "role": "Assistant Teacher",
+      "department": "Languages & Social Sciences",
+      "wing": "Kiratpur campus",
+      "qualifications": "B.A. (History, Hindi, Political Science)",
+      "experience": "With the school since 2024",
+      "subjects": [
+        "History",
+        "Hindi",
+        "Political Science"
+      ],
+      "contact": "ndrgicktp@gmail.com",
+      "photo": null,
+      "initials": "DG",
+      "status": "verified",
+      "badge": "Humanities"
+    },
+    {
+      "id": "t-charu-chauhan",
+      "name": "Km. Charu Chauhan",
+      "nameHi": "कु. चारू चौहान",
+      "role": "Assistant Teacher",
+      "department": "Languages & Social Sciences",
+      "wing": "Kiratpur campus",
+      "qualifications": "B.A. (Hindi, Sanskrit, Geography)",
+      "experience": "With the school since 2025",
+      "subjects": [
+        "Hindi",
+        "Sanskrit",
         "Geography"
       ],
       "contact": "ndrgicktp@gmail.com",
       "photo": null,
-      "initials": "LH",
-      "status": "updating",
-      "badge": "Sanctioned Cadre"
+      "initials": "CC",
+      "status": "verified",
+      "badge": "Languages"
     },
     {
-      "id": "slot-junior-high-craft",
-      "name": "Faculty — Upper Primary & Art/Craft/Home Science",
-      "nameHi": "शिक्षिका — उच्च प्राथमिक, कला, शिल्प एवं गृह विज्ञान",
-      "role": "Upper Primary Girls' Wing (Classes VI–VIII)",
-      "department": "Junior High School Wing (Classes VI–VIII)",
-      "wing": "Shri Narayandas Rastogi Balika Vidya Mandir Junior High School",
-      "qualifications": "B.A. / B.Sc., B.Ed. / BTC (Sanctioned vide BSA Order 5691-92/2000-01)",
-      "experience": "Holistic Middle School & Vocational Skill Education for Girls",
+      "id": "t-shahreen",
+      "name": "Km. Shahreen",
+      "nameHi": "कु. शहरीन",
+      "role": "Teacher",
+      "department": "Art & Languages",
+      "wing": "Kiratpur campus",
+      "qualifications": "Drawing, English",
+      "experience": "With the school since 2025",
       "subjects": [
-        "Home Science",
-        "Art & Craft",
-        "Upper Primary Core Subjects",
-        "Moral Education"
+        "Drawing",
+        "English"
       ],
       "contact": "ndrgicktp@gmail.com",
       "photo": null,
-      "initials": "JH",
-      "status": "updating",
-      "badge": "Sanctioned Cadre"
+      "initials": "SH",
+      "status": "verified",
+      "badge": "Art"
     },
     {
-      "id": "slot-primary-shishu-mandir",
-      "name": "Primary Wing Faculty — Saraswati Shishu Mandir",
-      "nameHi": "आचार्य / शिक्षिका मण्डल — सरस्वती शिशु मन्दिर (प्राइमरी विभाग)",
-      "role": "Foundational & Primary Education (Nursery to Class V)",
-      "department": "Primary Wing — Saraswati Shishu Mandir (Classes I–V)",
-      "wing": "Permanent Recognition Order No. 891/96-97 (31 May 1997)",
-      "qualifications": "D.El.Ed. / BTC / Graduate Teachers (Roster being updated)",
-      "experience": "Foundational Literacy, Numeracy & Value Education",
-      "subjects": [
-        "Foundational Hindi & English",
-        "Primary Arithmetic",
-        "Environmental Studies",
-        "Bal Sanskar"
-      ],
+      "id": "s-hemlata",
+      "name": "Smt. Hemlata",
+      "nameHi": "श्रीमती हेमलता",
+      "role": "Support Staff (कर्मचारी)",
+      "department": "Support Staff",
+      "wing": "Kiratpur campus",
+      "qualifications": "High School",
+      "experience": "With the school since 2025",
+      "subjects": [],
       "contact": "ndrgicktp@gmail.com",
       "photo": null,
-      "initials": "PS",
-      "status": "updating",
-      "badge": "Primary Wing"
+      "initials": "HL",
+      "status": "verified",
+      "badge": "Support Staff"
     },
     {
-      "id": "slot-computer-digital-lab",
-      "name": "Computer & Digital Literacy Instructor",
-      "nameHi": "कम्प्यूटर एवं डिजिटल शिक्षा प्रशिक्षक",
-      "role": "IT, Computer Lab & Digital Skills Cell",
-      "department": "Digital Literacy & Administrative Office",
-      "wing": "2026 Campus Modernization Initiative",
-      "qualifications": "BCA / MCA / O-Level Computer Instructor (Profile updating)",
-      "experience": "Computer Lab Training & Digital Classroom Support",
-      "subjects": [
-        "Computer Fundamentals",
-        "Digital Literacy",
-        "Typing & Office Applications"
-      ],
+      "id": "s-harsati",
+      "name": "Smt. Harsati",
+      "nameHi": "श्रीमती हरसती",
+      "role": "Sanitation Staff (सफाई कर्मचारी)",
+      "department": "Support Staff",
+      "wing": "Kiratpur campus",
+      "qualifications": "",
+      "experience": "With the school since 2015",
+      "subjects": [],
       "contact": "ndrgicktp@gmail.com",
       "photo": null,
-      "initials": "IT",
-      "status": "updating",
-      "badge": "2026 Digital Revival"
-    },
-    {
-      "id": "slot-admin-office-clerk",
-      "name": "Administrative Office & Head Clerk (वरिष्ठ लिपिक)",
-      "nameHi": "विद्यालय कार्यालय एवं अभिलेख प्रभारी (लिपिक वर्ग)",
-      "role": "Admissions, Scholarship Records & UP Board Portal Office",
-      "department": "Digital Literacy & Administrative Office",
-      "wing": "Sanctioned Clerical & Support Cadre (BSA Order 5691-92/2000-01)",
-      "qualifications": "Office Administration, Student Records & Scholarship Desk",
-      "experience": "Admissions, Transfer Certificates (TC), & Parent Helpdesk",
-      "subjects": [
-        "Student Admissions",
-        "EWS & Scholarship Records",
-        "Fee & Examination Desk"
-      ],
-      "contact": "+91 8954869291 / +91 9756247133",
-      "photo": null,
-      "initials": "AO",
-      "status": "updating",
-      "badge": "Admin Helpdesk"
+      "initials": "HS",
+      "status": "verified",
+      "badge": "Support Staff"
     }
-  ]
+  ],
+  "_source": "Names, roles, subjects and appointment years from the Principal's letter to the Trust dated 11 July 2026 (school history and staff list). Dates of birth, home addresses and mobile numbers in that letter are deliberately not published."
 }
