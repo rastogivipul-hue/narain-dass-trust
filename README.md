@@ -2,7 +2,7 @@
 
 Static site for **Narain Dass Rastogi Charitable Trust** (registered Delhi, 09 August 1991) and its schools in **Mohalla Jhanda, Kiratpur, District Bijnor, U.P. – 246731**, founded **28 March 1990**.
 
-Live: https://narain-dass-trust.vercel.app/ (Vercel; every push to `main` deploys).
+Live: https://narain-dass-rastogi-trust.vercel.app/ (Vercel; every push to `main` deploys). The older narain-dass-trust.vercel.app serves a stale build.
 
 ## Schools
 1. **Shri Narayan Das Rastogi Saraswati Shishu Mandir** — LKG–Class V, co-educational (UDISE+ 09030704709)
@@ -17,21 +17,42 @@ Principal: Shri Devendra Singh (from 1 Aug 2026). 2026: 348 students, 15 teacher
 - 80G-equivalent: AAATN1994LF20261, s. 354(4) Income-tax Act 2025 — **provisional**, TY 2026–27 to 2028–29
 - CSR-1: CSR00117504 (SRN AC5909859) • NGO Darpan: DL/2026/1118189
 
-## Structure
-- `index.html` — single page (Tailwind Play CDN; no build step yet)
-- `data/faculty.json` — faculty directory, rendered into `#faculty` at runtime
-- `images/campus/` — campus photos (`*.webp` full size, `*-800.webp` thumbnails)
-- `images/payment/` — slot for the bank-issued UPI QR (`upi-qr.png`)
+## Structure (multi-page, static HTML)
+Pages (clean URLs via `"cleanUrls": true` in `vercel.json`):
+- `index.html` → `/` Home • `story.html` → `/story` • `schools.html` → `/schools` • `campus.html` → `/campus`
+- `trust.html` → `/trust` • `news.html` → `/news` • `support.html` → `/support` (donate, CSR, volunteer, donor wall)
+- `contact.html` → `/contact` • `privacy.html` → `/privacy`
+- Old one-page links (`/#donate`, `/#heritage`, …) are redirected by a small script on Home.
+
+Shared assets:
+- `assets/site.css` — compiled, minified Tailwind (no CDN). `assets/site.js` — language toggle, mobile menu, lightbox, toast, `postToBackend`, `newRef`, donate flow and enquiry form handlers.
+- `data/faculty.json` — faculty directory, rendered into `#faculty` on `/schools`
+- `images/campus/`, `images/members/`, `images/brand/`, `images/payment/` (slot for the bank-issued UPI QR `upi-qr.png`)
 - `js/qrcode.min.js` — vendored QR generator (qrcode-generator by Kazuhiko Arase, MIT)
-- `llms.txt`, `llms-full.txt`, `sitemap.xml`
+- `llms.txt`, `llms-full.txt`, `sitemap.xml`, `robots.txt`
+
+The pages are written by a generator kept outside this repo (`gen/build.py` in the Trust's working folder): it writes the shared header, footer, lightbox and dossier modal into every page, so the output is plain static HTML. If you edit a page by hand, make the same edit in every page's header/footer.
+
+## Adding a news post
+News lives in one list (`NEWS` in the generator's `content.py`), one block per post, newest first:
+```python
+{"date": "2026-11-14", "label_en": "November 2026", "label_hi": "नवम्बर 2026",
+ "title_en": "…", "title_hi": "…", "body_en": "…", "body_hi": "…",
+ "image": "/images/campus/<existing-photo>.webp", "alt_en": "…", "link": "/campus"},
+```
+Re-run the generator; `/news` lists every post and Home shows the latest three. Without the generator, copy one `<article class="bento-card …" id="news-YYYY-MM-DD">` block in `news.html` (and in the Home "Latest news" section), newest first. Every post needs both English and Hindi text.
+
+## Forms
+All forms post JSON to `BACKEND_URL` (Google Apps Script, see the Trust's `Code.gs`) and fall back to a pre-filled email when it is empty or fails. Enquiry forms use `form: 'enquiry'` with `type` = `Admission enquiry`, `Alumni story`, `Volunteer`, `General` or `Dossier request`; every form has the honeypot field `name="website"`.
 
 ## Donations (KYC first)
-The `#donate` section collects donor KYC in the browser (nothing is stored or sent by the site), then shows payment details, then opens a pre-filled email with the UTR for the 80G receipt. Donations go only to the Trust's account at Ujjivan Small Finance Bank, Noida Branch.
+The `/support#donate` section collects donor KYC in the browser (nothing is stored or sent by the site), then shows payment details, then opens a pre-filled email with the UTR for the 80G receipt. Donations go only to the Trust's account at Ujjivan Small Finance Bank, Noida Branch.
 
-To turn on UPI, edit the constants at the top of the script in `index.html`:
+To turn on UPI or the form backend, edit the constants at the top of `assets/site.js`:
 ```js
 const UPI_VPA = "";            // set to the Trust's UPI ID to show the UPI block
 const UPI_QR_MODE = "generate"; // or "image" to use images/payment/upi-qr.png
+const BACKEND_URL = "";        // Apps Script web-app URL; empty = email fallback
 ```
 With `UPI_VPA = ""` only bank transfer is shown.
 
