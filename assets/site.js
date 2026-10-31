@@ -326,6 +326,12 @@ function submitKyc(e) {
 function inr(n) { return '₹' + Number(n).toLocaleString('en-IN'); }
 function showPayment() {
   document.getElementById('payAmountLabel').textContent = inr(donor.amount);
+  var big = Number(donor.amount) > 100000;
+  document.getElementById('bkAcc').textContent = big ? '2347110110055405' : '2347110110055404';
+  var r = document.getElementById('bkRule');
+  if (r) r.innerHTML = big
+    ? '<span data-lang="en">Account 2 • for donations above ₹1,00,000</span><span data-lang="hi">खाता 2 • ₹1,00,000 से अधिक के दान के लिए</span>'
+    : '<span data-lang="en">Account 1 • for donations up to ₹1,00,000</span><span data-lang="hi">खाता 1 • ₹1,00,000 तक के दान के लिए</span>';
   document.getElementById('kycSummary').textContent =
     donor.name + ' • PAN ' + donor.pan + ' • ' + donor.purpose;
   const upiBlock = document.getElementById('upiBlock');
