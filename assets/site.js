@@ -512,7 +512,7 @@ function isBig(a) { return Number(a) > UPI_MAX; }
 function accFor(a) { return isBig(a) ? ACC_BIG : ACC_SMALL; }
 function isMobileUa() { return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '') || (navigator.maxTouchPoints > 1 && /Macintosh/.test(navigator.userAgent || '')); }
 function copyBtn(text) {
-  return '<button type="button" class="copy-btn px-2.5 py-1 rounded-full text-[11px] font-semibold border border-ink/15 bg-white hover:bg-sand" data-copy-text="' + esc(text) + '">' + LL('Copy', 'कॉपी करें') + '</button>';
+  return '<button type="button" class="copy-btn flex-shrink-0 whitespace-nowrap px-2.5 py-1 rounded-full text-[11px] font-semibold border border-ink/15 bg-white hover:bg-sand" data-copy-text="' + esc(text) + '">' + LL('Copy', 'कॉपी करें') + '</button>';
 }
 /* UPI card: the bank's signed merchant QR, never with an amount added. */
 function upiCardHtml(amount) {
