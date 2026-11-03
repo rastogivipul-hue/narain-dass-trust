@@ -30,7 +30,7 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="/assets/site.css?v=8cfb319a" />
+  <link rel="stylesheet" href="/assets/site.css?v=da82a681" />
 </head>
 <body class="selection:bg-crimson selection:text-white">
 
@@ -120,10 +120,28 @@
           <div class="text-xs font-bold uppercase tracking-widest text-crimson"><span data-lang="en">Donate</span><span data-lang="hi">दान</span></div>
           <h1 class="serif-display text-3xl sm:text-5xl text-ink mt-2"><span data-lang="en">Give with an 80G receipt</span><span data-lang="hi">80G रसीद के साथ दान दें</span></h1>
           <p class="text-ink font-semibold mt-3 text-base sm:text-lg"><span data-lang="en">Enrolment peaked at 591 in 2014 and is 348 today. Your support helps us bring families back.</span><span data-lang="hi">नामांकन 2014 में 591 के शिखर पर था और आज 348 है। आपका सहयोग परिवारों को फिर से विद्यालय से जोड़ने में हमारी मदद करता है।</span></p>
-          <p class="text-slate mt-2 text-sm sm:text-base"><span data-lang="en">To issue your 80G receipt and report your donation to the Income Tax Department (Form 10BD), we need your details first. Payment details appear after step 1. Nothing you type is stored or sent by this website; it goes only into the email you send us in step 3.</span><span data-lang="hi">आपकी 80G रसीद जारी करने और आयकर विभाग को आपके दान की जानकारी (Form 10BD) देने के लिए पहले हमें आपका विवरण चाहिए। भुगतान का विवरण चरण 1 के बाद दिखेगा। आप जो भी भरते हैं, उसे यह वेबसाइट न तो सहेजती है न कहीं भेजती है; वह केवल उस ईमेल में जाता है जो आप चरण 3 में हमें भेजते हैं।</span></p>
+          <p class="text-slate mt-2 text-sm sm:text-base"><span data-lang="en">To issue your 80G receipt and report your donation to the Income Tax Department (Form 10BD), we need your details first. Payment details appear after that. Nothing you type is stored by this website; it reaches the Trust only in the email you send us.</span><span data-lang="hi">आपकी 80G रसीद जारी करने और आयकर विभाग को आपके दान की जानकारी (Form 10BD) देने के लिए पहले हमें आपका विवरण चाहिए। भुगतान का विवरण उसके बाद दिखेगा। आप जो भी भरते हैं, उसे यह वेबसाइट नहीं सहेजती; वह केवल उस ईमेल के ज़रिए ट्रस्ट तक पहुँचता है जो आप हमें भेजते हैं।</span></p>
         </div>
 
-        <ol class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs font-semibold text-slate" aria-label="Donation steps">
+        <div id="giveAs" class="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:items-end" style="scroll-margin-top:96px">
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate mb-1.5"><span data-lang="en">I am giving as</span><span data-lang="hi">मैं दान दे रहा/रही हूँ</span></div>
+            <div class="seg" role="group" aria-label="Giving as">
+              <button type="button" data-giver="individual" aria-pressed="true"><span data-lang="en">Individual</span><span data-lang="hi">व्यक्तिगत</span></button>
+              <button type="button" data-giver="company" aria-pressed="false"><span data-lang="en">Company / CSR</span><span data-lang="hi">कम्पनी / CSR</span></button>
+            </div>
+          </div>
+          <div id="freqWrap">
+            <div class="text-[11px] font-bold uppercase tracking-wider text-slate mb-1.5"><span data-lang="en">How often</span><span data-lang="hi">कितनी बार</span></div>
+            <div class="seg" role="group" aria-label="Donation frequency">
+              <button type="button" data-freq="once" aria-pressed="true"><span data-lang="en">One-time</span><span data-lang="hi">एक बार</span></button>
+              <button type="button" data-freq="monthly" aria-pressed="false"><span data-lang="en">Monthly</span><span data-lang="hi">मासिक</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div id="flowOnce">
+        <ol class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-xs font-semibold text-slate" aria-label="Donation steps">
           <li class="flex items-center gap-2"><span id="dot1" class="step-dot bg-crimson text-white">1</span> <span data-lang="en">Your details</span><span data-lang="hi">आपका विवरण</span></li>
           <li class="flex items-center gap-2"><span id="dot2" class="step-dot bg-white border border-ink/15 text-slate">2</span> <span data-lang="en">Pay</span><span data-lang="hi">भुगतान</span></li>
           <li class="flex items-center gap-2"><span id="dot3" class="step-dot bg-white border border-ink/15 text-slate">3</span> <span data-lang="en">Send payment reference</span><span data-lang="hi">भुगतान संदर्भ भेजें</span></li>
@@ -201,16 +219,11 @@
           <p id="kycSummary" class="text-xs text-slate mt-1"></p>
 
           <div class="grid md:grid-cols-2 gap-6 mt-6">
-            <div id="upiBlock" class="hidden p-5 rounded-2xl bg-ivory border border-ink/10">
-              <div class="text-xs font-bold uppercase tracking-wider text-crimson"><span data-lang="en">Pay by UPI</span><span data-lang="hi">UPI से भुगतान</span></div>
-              <div id="upiQr" class="mt-3 mx-auto w-48 h-48 bg-white rounded-xl border border-ink/10 p-2 flex items-center justify-center text-xs text-slate">QR code</div>
-              <p class="text-xs text-slate mt-3 text-center"><span data-lang="en">Scan with any UPI app, or on your phone:</span><span data-lang="hi">किसी भी UPI ऐप से स्कैन करें, या फ़ोन पर:</span></p>
-              <a id="upiLink" href="#" class="mt-2 block text-center w-full py-3 rounded-full bg-ink text-white text-sm font-semibold hover:bg-ink/90 transition"><span data-lang="en">Pay via UPI app</span><span data-lang="hi">UPI ऐप से भुगतान करें</span></a>
-              <p class="text-[11px] text-slate mt-2 text-center break-all">UPI ID: <strong id="upiVpaLabel" class="text-ink"></strong></p>
-            </div>
+            <div id="upiBlock" class="hidden p-5 rounded-2xl bg-ivory border border-ink/10"></div>
 
             <div id="bankBlock" class="p-5 rounded-2xl bg-ivory border border-ink/10 md:col-span-2">
-              <div class="text-xs font-bold uppercase tracking-wider text-crimson"><span data-lang="en">Bank transfer (NEFT / RTGS / IMPS)</span><span data-lang="hi">बैंक ट्रांसफ़र (NEFT / RTGS / IMPS)</span></div>
+              <div id="bkTitle" class="text-xs font-bold uppercase tracking-wider text-crimson"><span data-lang="en">Bank transfer (NEFT / RTGS / IMPS)</span><span data-lang="hi">बैंक ट्रांसफ़र (NEFT / RTGS / IMPS)</span></div>
+              <p id="upiNote" class="hidden mt-1 text-xs text-slate"><span data-lang="en">UPI is offered only for gifts up to ₹1,00,000. Please pay by RTGS or NEFT.</span><span data-lang="hi">UPI केवल ₹1,00,000 तक के दान के लिए है। कृपया RTGS या NEFT से भुगतान करें।</span></p>
               <p id="bkRule" class="mt-1 text-xs font-semibold text-ink"></p>
               <dl class="mt-3 space-y-2.5 text-sm">
                 <div class="flex flex-wrap items-center justify-between gap-2 py-1.5 border-b border-ink/5">
@@ -268,6 +281,93 @@
           <button type="submit" class="mt-6 w-full sm:w-auto px-8 py-3.5 rounded-full bg-crimson text-white text-sm font-semibold hover:bg-crimsonDark transition shadow-sm"><span data-lang="en">Send details for 80G receipt</span><span data-lang="hi">80G रसीद के लिए विवरण भेजें</span></button>
           <p class="text-[11px] text-slate mt-3"><span data-lang="en">If no email app opens, write to <a href="mailto:naraindassrastogicharitabletrust@outlook.com" class="text-crimson hover:underline break-all">naraindassrastogicharitabletrust@outlook.com</a> with your name, PAN, address, mobile, amount, purpose and UTR.</span><span data-lang="hi">यदि कोई ईमेल ऐप न खुले, तो अपना नाम, PAN, पता, मोबाइल, राशि, उद्देश्य और UTR लिखकर <a href="mailto:naraindassrastogicharitabletrust@outlook.com" class="text-crimson hover:underline break-all">naraindassrastogicharitabletrust@outlook.com</a> पर ईमेल करें।</span></p>
         </form>
+        </div>
+
+        <!-- Monthly pledge -->
+        <div id="flowMonthly" hidden>
+          <form id="pledgeForm" novalidate class="mt-6 bento-card rounded-3xl p-6 sm:p-8 bg-white relative" onsubmit="submitPledge(event)">
+            <input type="text" id="hpPledge" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
+            <h3 class="text-lg font-bold text-ink"><span data-lang="en">Monthly pledge</span><span data-lang="hi">मासिक दान का संकल्प</span></h3>
+            <p class="text-xs text-slate mt-1 leading-relaxed"><span data-lang="en">A pledge is your promise to give every month. There is no auto-debit: you pay each month yourself, by UPI or through a standing instruction in your bank's app. After you submit, we show the payment details and a calendar reminder you can add.</span><span data-lang="hi">संकल्प हर महीने दान देने का आपका वचन है। इसमें कोई ऑटो-डेबिट नहीं है: आप हर महीने स्वयं UPI से या अपने बैंक के ऐप में स्टैंडिंग इंस्ट्रक्शन से भुगतान करते हैं। फ़ॉर्म भेजने के बाद हम भुगतान का विवरण और एक कैलेंडर रिमाइंडर दिखाते हैं जिसे आप जोड़ सकते हैं।</span></p>
+            <div class="grid sm:grid-cols-2 gap-4 mt-5 text-sm">
+            <div class="sm:col-span-2"><label for="pName" class="block font-semibold text-ink mb-1"><span data-lang="en">Full name (as on PAN) *</span><span data-lang="hi">पूरा नाम (PAN के अनुसार) *</span></label><input id="pName" type="text" class="field " autocomplete="name" /><div class="err" id="epName"><span data-lang="en">Please enter your full name.</span><span data-lang="hi">कृपया अपना पूरा नाम लिखें।</span></div></div>
+            <div class=""><label for="pEmail" class="block font-semibold text-ink mb-1"><span data-lang="en">Email *</span><span data-lang="hi">ईमेल *</span></label><input id="pEmail" type="email" class="field " autocomplete="email" /><div class="err" id="epEmail"><span data-lang="en">Enter a valid email address.</span><span data-lang="hi">सही ईमेल पता लिखें।</span></div></div>
+            <div class=""><label for="pPhone" class="block font-semibold text-ink mb-1"><span data-lang="en">Mobile *</span><span data-lang="hi">मोबाइल *</span></label><input id="pPhone" type="tel" class="field " inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile" data-ph-hi="10 अंकों का मोबाइल नंबर" /><div class="err" id="epPhone"><span data-lang="en">Enter a 10-digit Indian mobile number.</span><span data-lang="hi">10 अंकों का भारतीय मोबाइल नंबर लिखें।</span></div></div>
+            <div class=""><label for="pAmount" class="block font-semibold text-ink mb-1"><span data-lang="en">Monthly amount (₹) *</span><span data-lang="hi">मासिक राशि (₹) *</span></label><input id="pAmount" type="number" class="field " min="1" step="1" inputmode="numeric" /><div class="err" id="epAmount"><span data-lang="en">Enter an amount of ₹1 or more, in whole rupees.</span><span data-lang="hi">₹1 या उससे अधिक की राशि पूरे रुपयों में लिखें।</span></div></div>
+            <div class=""><label for="pPan" class="block font-semibold text-ink mb-1"><span data-lang="en">PAN (for 80G receipt)</span><span data-lang="hi">PAN (80G रसीद के लिए)</span></label><input id="pPan" type="text" class="field uppercase tracking-widest" maxlength="10" autocomplete="off" placeholder="ABCDE1234F" /><p class="text-[11px] text-slate mt-1"><span data-lang="en">Optional now; needed before we can issue your 80G receipt.</span><span data-lang="hi">अभी वैकल्पिक; 80G रसीद जारी करने से पहले आवश्यक।</span></p><div class="err" id="epPan"><span data-lang="en">Enter a valid PAN, for example ABCDE1234F.</span><span data-lang="hi">सही PAN लिखें, जैसे ABCDE1234F।</span></div></div>
+            <div class=""><label for="pDay" class="block font-semibold text-ink mb-1"><span data-lang="en">Preferred day of the month *</span><span data-lang="hi">महीने की पसंदीदा तारीख *</span></label><select id="pDay" class="field"></select><div class="err" id="epDay"><span data-lang="en">Choose a day from 1 to 28.</span><span data-lang="hi">1 से 28 के बीच तारीख चुनें।</span></div></div>
+            <div class=""><label for="pStart" class="block font-semibold text-ink mb-1"><span data-lang="en">Start month *</span><span data-lang="hi">शुरुआती महीना *</span></label><select id="pStart" class="field"></select><div class="err" id="epStart"><span data-lang="en">Choose a start month.</span><span data-lang="hi">शुरुआती महीना चुनें।</span></div></div>
+            </div>
+            <button type="submit" class="mt-6 w-full sm:w-auto px-8 py-3.5 rounded-full bg-crimson text-white text-sm font-semibold hover:bg-crimsonDark transition shadow-sm"><span data-lang="en">Record my monthly pledge</span><span data-lang="hi">मेरा मासिक संकल्प दर्ज करें</span></button>
+            <p class="text-[11px] text-slate mt-3"><span data-lang="en">How we use and protect your details: <a href="/privacy" class="text-crimson hover:underline">Privacy Policy</a>.</span><span data-lang="hi">हम आपके विवरण का उपयोग और सुरक्षा कैसे करते हैं: <a href="/privacy" class="text-crimson hover:underline">गोपनीयता नीति</a>।</span></p>
+          </form>
+
+          <div id="pledgeDone" hidden class="mt-6 bento-card rounded-3xl p-6 sm:p-8 bg-white" style="scroll-margin-top:96px">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+              <h3 id="pledgeTitle" class="text-lg font-bold text-ink"></h3>
+              <button type="button" onclick="editPledge()" class="text-xs font-semibold text-crimson hover:underline self-start whitespace-nowrap"><span data-lang="en">Edit my pledge</span><span data-lang="hi">संकल्प बदलें</span></button>
+            </div>
+            <p id="pledgeRef" class="text-xs text-slate mt-1"></p>
+            <p class="mt-4 p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-900"><span data-lang="en">This is a pledge, not an auto-debit. The Trust does not debit your account or send monthly reminders, so please set up one of the options below.</span><span data-lang="hi">यह संकल्प है, ऑटो-डेबिट नहीं। ट्रस्ट आपके खाते से राशि नहीं काटता और न ही मासिक रिमाइंडर भेजता है, इसलिए कृपया नीचे दिए विकल्पों में से एक सेट करें।</span></p>
+            <div id="pledgePay" class="mt-5"></div>
+            <div class="mt-5 flex flex-col sm:flex-row gap-3">
+              <button type="button" onclick="downloadPledgeIcs()" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-crimson text-white text-sm font-semibold hover:bg-crimsonDark transition shadow-sm"><span data-lang="en">Add monthly reminder to my calendar</span><span data-lang="hi">मासिक रिमाइंडर मेरे कैलेंडर में जोड़ें</span></button>
+              <a id="pledgeAutopay" hidden href="#" target="_blank" rel="noopener" class="w-full sm:w-auto text-center px-6 py-3 rounded-full bg-white text-ink border border-ink/15 text-sm font-semibold hover:bg-sand transition"><span data-lang="en">Set up autopay</span><span data-lang="hi">ऑटोपे सेट करें</span></a>
+            </div>
+            <p class="text-[11px] text-slate mt-3"><span data-lang="en">After each payment, email the UTR / transaction reference to <a href="mailto:naraindassrastogicharitabletrust@outlook.com" class="text-crimson hover:underline break-all">naraindassrastogicharitabletrust@outlook.com</a> with your pledge reference, so we can match it for your 80G receipt.</span><span data-lang="hi">हर भुगतान के बाद UTR / ट्रांज़ैक्शन संदर्भ अपने संकल्प संदर्भ के साथ <a href="mailto:naraindassrastogicharitabletrust@outlook.com" class="text-crimson hover:underline break-all">naraindassrastogicharitabletrust@outlook.com</a> पर ईमेल करें, ताकि हम आपकी 80G रसीद के लिए उसका मिलान कर सकें।</span></p>
+          </div>
+        </div>
+
+        <!-- Company / CSR contribution -->
+        <div id="flowCompany" hidden>
+          <div id="company" class="mt-6 grid lg:grid-cols-12 gap-6 items-start" style="scroll-margin-top:96px">
+            <form id="companyForm" novalidate class="lg:col-span-7 bento-card rounded-3xl p-6 sm:p-8 bg-white relative" onsubmit="submitCompany(event)">
+              <input type="text" id="hpCompany" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
+              <h3 class="text-lg font-bold text-ink"><span data-lang="en">For companies &amp; CSR</span><span data-lang="hi">कम्पनियों एवं CSR के लिए</span></h3>
+              <p class="text-xs text-slate mt-1 leading-relaxed"><span data-lang="en">Fill in the company's details. We reply with the receipt and documents you ask for. Companies usually pay by RTGS or NEFT.</span><span data-lang="hi">कम्पनी का विवरण भरें। आप जो रसीद और दस्तावेज़ माँगेंगे, हम उनके साथ उत्तर देंगे। कम्पनियाँ आमतौर पर RTGS या NEFT से भुगतान करती हैं।</span></p>
+              <div class="grid sm:grid-cols-2 gap-4 mt-5 text-sm">
+            <div class="sm:col-span-2"><label for="cName" class="block font-semibold text-ink mb-1"><span data-lang="en">Company name *</span><span data-lang="hi">कम्पनी का नाम *</span></label><input id="cName" type="text" class="field " autocomplete="organization" /><div class="err" id="ecName"><span data-lang="en">Please enter the company name.</span><span data-lang="hi">कृपया कम्पनी का नाम लिखें।</span></div></div>
+            <div class=""><label for="cCin" class="block font-semibold text-ink mb-1"><span data-lang="en">CIN *</span><span data-lang="hi">CIN *</span></label><input id="cCin" type="text" class="field uppercase" maxlength="21" autocomplete="off" placeholder="U12345DL2010PTC123456" /><div class="err" id="ecCin"><span data-lang="en">Enter the 21-character CIN, for example U12345DL2010PTC123456.</span><span data-lang="hi">21 अक्षरों का CIN लिखें, जैसे U12345DL2010PTC123456।</span></div></div>
+            <div class=""><label for="cPan" class="block font-semibold text-ink mb-1"><span data-lang="en">Company PAN *</span><span data-lang="hi">कम्पनी का PAN *</span></label><input id="cPan" type="text" class="field uppercase tracking-widest" maxlength="10" autocomplete="off" placeholder="AAACA1234F" /><div class="err" id="ecPan"><span data-lang="en">Enter a valid PAN, for example ABCDE1234F.</span><span data-lang="hi">सही PAN लिखें, जैसे ABCDE1234F।</span></div></div>
+            <div class=""><label for="cGstin" class="block font-semibold text-ink mb-1"><span data-lang="en">GSTIN (optional)</span><span data-lang="hi">GSTIN (वैकल्पिक)</span></label><input id="cGstin" type="text" class="field uppercase" maxlength="15" autocomplete="off" placeholder="07AAACA1234F1Z5" /><div class="err" id="ecGstin"><span data-lang="en">Enter a valid 15-character GSTIN, or leave it blank.</span><span data-lang="hi">सही 15 अक्षरों का GSTIN लिखें, या खाली छोड़ दें।</span></div></div>
+            <div class=""><label for="cAmount" class="block font-semibold text-ink mb-1"><span data-lang="en">Amount (₹) *</span><span data-lang="hi">राशि (₹) *</span></label><input id="cAmount" type="number" class="field " min="1" step="1" inputmode="numeric" /><div class="err" id="ecAmount"><span data-lang="en">Enter an amount of ₹1 or more, in whole rupees.</span><span data-lang="hi">₹1 या उससे अधिक की राशि पूरे रुपयों में लिखें।</span></div></div>
+            <div class=""><label for="cContact" class="block font-semibold text-ink mb-1"><span data-lang="en">Contact person *</span><span data-lang="hi">संपर्क व्यक्ति *</span></label><input id="cContact" type="text" class="field " autocomplete="name" /><div class="err" id="ecContact"><span data-lang="en">Please enter the contact person's name.</span><span data-lang="hi">कृपया संपर्क व्यक्ति का नाम लिखें।</span></div></div>
+            <div class=""><label for="cDesig" class="block font-semibold text-ink mb-1"><span data-lang="en">Designation *</span><span data-lang="hi">पद *</span></label><input id="cDesig" type="text" class="field " autocomplete="organization-title" /><div class="err" id="ecDesig"><span data-lang="en">Please enter the designation.</span><span data-lang="hi">कृपया पद लिखें।</span></div></div>
+            <div class=""><label for="cEmail" class="block font-semibold text-ink mb-1"><span data-lang="en">Email *</span><span data-lang="hi">ईमेल *</span></label><input id="cEmail" type="email" class="field " autocomplete="email" /><div class="err" id="ecEmail"><span data-lang="en">Enter a valid email address.</span><span data-lang="hi">सही ईमेल पता लिखें।</span></div></div>
+            <div class=""><label for="cPhone" class="block font-semibold text-ink mb-1"><span data-lang="en">Phone *</span><span data-lang="hi">फ़ोन *</span></label><input id="cPhone" type="tel" class="field " inputmode="numeric" autocomplete="tel" placeholder="10-digit number" data-ph-hi="10 अंकों का नंबर" /><div class="err" id="ecPhone"><span data-lang="en">Enter a 10-digit phone number.</span><span data-lang="hi">10 अंकों का फ़ोन नंबर लिखें।</span></div></div>
+            <div class=""><label for="cPurpose" class="block font-semibold text-ink mb-1"><span data-lang="en">Purpose *</span><span data-lang="hi">उद्देश्य *</span></label><select id="cPurpose" class="field"><option value="CSR contribution" data-hi="CSR योगदान">CSR contribution</option><option value="General donation" data-hi="सामान्य दान">General donation</option><option value="Specific project" data-hi="किसी खास परियोजना के लिए">Specific project</option></select></div>
+                <div id="cProjectWrap" hidden><label for="cProject" class="block font-semibold text-ink mb-1"><span data-lang="en">Project</span><span data-lang="hi">परियोजना</span></label><select id="cProject" class="field"><option value="Fee concession for girls" data-hi="बालिकाओं की फीस में छूट">Fee concession for girls</option><option value="Smart classroom" data-hi="स्मार्ट कक्षा">Smart classroom</option><option value="Infrastructure" data-hi="सुविधाएँ (इन्फ्रास्ट्रक्चर)">Infrastructure</option></select></div>
+            <div class="sm:col-span-2"><label class="flex items-start gap-2.5 text-sm text-ink"><input id="c80g" type="checkbox" class="mt-1 w-4 h-4 accent-[#7C1D26]" /><span><span data-lang="en">We need an 80G receipt</span><span data-lang="hi">हमें 80G रसीद चाहिए</span></span></label></div>
+            <div class="sm:col-span-2"><label class="flex items-start gap-2.5 text-sm text-ink"><input id="cCsrPack" type="checkbox" class="mt-1 w-4 h-4 accent-[#7C1D26]" /><span><span data-lang="en">We need the CSR documentation pack (registration certificates, trust deed, PAN)</span><span data-lang="hi">हमें CSR दस्तावेज़ पैक चाहिए (पंजीकरण प्रमाणपत्र, ट्रस्ट डीड, PAN)</span></span></label></div>
+              </div>
+              <button type="submit" class="mt-6 w-full sm:w-auto px-8 py-3.5 rounded-full bg-crimson text-white text-sm font-semibold hover:bg-crimsonDark transition shadow-sm"><span data-lang="en">Send company details</span><span data-lang="hi">कम्पनी का विवरण भेजें</span></button>
+              <p class="text-[11px] text-slate mt-3"><span data-lang="en">Company details are kept as Trust records. <a href="/privacy" class="text-crimson hover:underline">Privacy Policy</a>.</span><span data-lang="hi">कम्पनी का विवरण ट्रस्ट के रिकॉर्ड में रखा जाता है। <a href="/privacy" class="text-crimson hover:underline">गोपनीयता नीति</a>।</span></p>
+            </form>
+
+            <aside class="lg:col-span-5 rounded-3xl p-6 sm:p-7 bg-ivory border border-ink/10">
+              <div class="text-xs font-bold uppercase tracking-wider text-crimson"><span data-lang="en">Compliance</span><span data-lang="hi">अनुपालन</span></div>
+              <dl class="mt-2">
+                <div class="flex flex-wrap justify-between gap-x-3 gap-y-0.5 py-1.5 border-b border-ink/5"><dt class="text-slate text-xs"><span data-lang="en">CSR-1 registration (MCA)</span><span data-lang="hi">CSR-1 पंजीकरण (MCA)</span></dt><dd class="font-semibold text-ink text-xs sm:text-sm">CSR00117504</dd></div>
+                <div class="flex flex-wrap justify-between gap-x-3 gap-y-0.5 py-1.5 border-b border-ink/5"><dt class="text-slate text-xs"><span data-lang="en">12AB / 80G</span><span data-lang="hi">12AB / 80G</span></dt><dd class="font-semibold text-ink text-xs sm:text-sm"><span data-lang="en">Provisional, tax years 2026–29</span><span data-lang="hi">अस्थायी, कर वर्ष 2026–29</span></dd></div>
+                <div class="flex flex-wrap justify-between gap-x-3 gap-y-0.5 py-1.5 border-b border-ink/5"><dt class="text-slate text-xs"><span data-lang="en">NGO Darpan</span><span data-lang="hi">NGO Darpan</span></dt><dd class="font-semibold text-ink text-xs sm:text-sm">DL/2026/1118189</dd></div>
+                <div class="flex flex-wrap justify-between gap-x-3 gap-y-0.5 py-1.5 border-b border-ink/5"><dt class="text-slate text-xs"><span data-lang="en">Trust PAN</span><span data-lang="hi">ट्रस्ट PAN</span></dt><dd class="font-semibold text-ink text-xs sm:text-sm">AAATN1994L</dd></div>
+              </dl>
+              <p class="text-[11px] text-slate mt-3 leading-relaxed"><span data-lang="en">80G approval is provisional. The Trust is registered with the Ministry of Corporate Affairs to receive CSR funds (Form CSR-1). Whether a contribution counts towards your company's CSR obligation is for your CSR committee to decide.</span><span data-lang="hi">80G स्वीकृति अस्थायी है। ट्रस्ट CSR राशि प्राप्त करने के लिए कॉर्पोरेट कार्य मंत्रालय में पंजीकृत है (Form CSR-1)। कोई योगदान आपकी कम्पनी के CSR दायित्व में गिना जाएगा या नहीं, यह आपकी CSR समिति तय करती है।</span></p>
+              <div id="compBank" class="mt-5 p-4 rounded-2xl bg-white border border-ink/10"></div>
+            </aside>
+          </div>
+
+          <div id="companyDone" hidden class="mt-6 bento-card rounded-3xl p-6 sm:p-8 bg-white" style="scroll-margin-top:96px">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
+              <h3 id="companyTitle" class="text-lg font-bold text-ink"></h3>
+              <button type="button" onclick="editCompany()" class="text-xs font-semibold text-crimson hover:underline self-start whitespace-nowrap"><span data-lang="en">Edit details</span><span data-lang="hi">विवरण बदलें</span></button>
+            </div>
+            <p id="companyRef" class="text-xs text-slate mt-1"></p>
+            <div id="companyPay" class="mt-5"></div>
+            <a id="companyUtr" href="#" class="mt-5 inline-flex w-full sm:w-auto justify-center px-8 py-3.5 rounded-full bg-crimson text-white text-sm font-semibold hover:bg-crimsonDark transition shadow-sm"><span data-lang="en">Email the UTR after paying</span><span data-lang="hi">भुगतान के बाद UTR ईमेल करें</span></a>
+            <p class="text-[11px] text-slate mt-3"><span data-lang="en">We send the 80G receipt and CSR documents you asked for after the credit is confirmed.</span><span data-lang="hi">राशि की पुष्टि के बाद हम आपकी माँगी गई 80G रसीद और CSR दस्तावेज़ भेजते हैं।</span></p>
+          </div>
+        </div>
       </div>
     </section>
     <!-- CSR Partnerships -->
@@ -312,6 +412,7 @@
                 <a href="/support#donate" class="block text-center w-full py-3.5 px-5 rounded-full bg-crimson text-white text-xs sm:text-sm font-semibold hover:bg-crimsonDark transition shadow-sm">
                   <span data-lang="en">Donate with 80G receipt</span><span data-lang="hi">80G रसीद के साथ दान करें</span>
                 </a>
+                <a href="#company" class="block text-center w-full py-3.5 px-5 rounded-full bg-ink text-white text-xs sm:text-sm font-semibold hover:bg-ink/90 transition shadow-sm"><span data-lang="en">Give as a company (CSR form)</span><span data-lang="hi">कम्पनी के रूप में दें (CSR फ़ॉर्म)</span></a>
                 <button onclick="openDossierModal('Corporate CSR-1 & Statutory Compliance Pack')" class="w-full py-3 px-5 rounded-full bg-ivory text-ink border border-ink/15 text-xs sm:text-sm font-semibold hover:bg-sand transition">
                   <span data-lang="en">Request CSR dossier (CSR00117504)</span><span data-lang="hi">CSR दस्तावेज़ मँगाएँ (CSR00117504)</span>
                 </button>
@@ -479,6 +580,6 @@
     </div>
   </div>
 
-  <script src="/assets/site.js?v=ab8f01be"></script>
+  <script src="/assets/site.js?v=aadb9f28"></script>
 </body>
 </html>

@@ -1,2 +1,2 @@
-Place the bank-issued UPI QR for the Trust here as `upi-qr.png`, then set
-UPI_VPA (and UPI_QR_MODE = "image" if you want this file shown instead of the generated QR) in index.html.
+upi-qr.svg / upi-qr.png are regenerated from the exact payload of the Trust's Ujjivan merchant QR (UPI ID UJJ83981845379@Ujjivan, linked to a/c ...5404).
+The payload is signed by the bank: never edit it or add an amount. Source of truth: UPI_QR_PAYLOAD in /assets/site.js.
