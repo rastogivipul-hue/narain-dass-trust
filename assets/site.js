@@ -503,7 +503,6 @@ function submitEnquiry(e) {
    Account rule: up to ₹1,00,000 → …5404; above ₹1,00,000 → …5405 (bank transfer only). */
 const ACC_SMALL = '2347110110055404', ACC_BIG = '2347110110055405';
 const BANK_IFSC = 'UJVN0002347', BANK_ACC_NAME = 'NARAIN DAS RASTOGI CHARITABLE TRUST', BANK_BRANCH = 'Ujjivan Small Finance Bank, Noida Branch';
-const CIN_RE = /^[LU][0-9]{5}[A-Z]{2}[0-9]{4}[A-Z]{3}[0-9]{6}$/;
 const GSTIN_RE = /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$/;
 const MONTHS_EN = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 const MONTHS_HI = ['जनवरी','फ़रवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितंबर','अक्टूबर','नवंबर','दिसंबर'];
@@ -727,7 +726,7 @@ function companyAmountChanged() {
   const raw = document.getElementById('cAmount').value.trim();
   const a = /^\d+$/.test(raw) ? Number(raw) : 0;
   box.innerHTML = bankHtml(a > 0 ? a : null) +
-    (a > 0 && !isBig(a) && UPI_VPA ? '<p class="text-[11px] text-slate mt-2">' + LL('UPI is also available for this amount; the QR appears after you submit.', 'इस राशि के लिए UPI भी उपलब्ध है; QR फ़ॉर्म भेजने के बाद दिखेगा।') + '</p>'
+    (a > 0 && !isBig(a) && UPI_VPA ? '<p class="text-[11px] text-slate mt-2">' + LL('UPI is also available for this amount: scan the quick-pay QR at the top of this section.', 'इस राशि के लिए UPI भी उपलब्ध है: इस भाग में ऊपर दिया गया क्विक-पे QR स्कैन करें।') + '</p>'
       : a > 0 ? '<p class="text-[11px] text-slate mt-2">' + LL('Please pay by RTGS or NEFT. UPI is offered only up to ₹1,00,000.', 'कृपया RTGS या NEFT से भुगतान करें। UPI केवल ₹1,00,000 तक है।') + '</p>' : '');
 }
 (function () {
@@ -743,12 +742,11 @@ function submitCompany(e) {
   const f = document.getElementById('companyForm');
   const g = function (id) { return document.getElementById(id); };
   const up = function (id) { const v = g(id).value.trim().toUpperCase().replace(/\s+/g, ''); g(id).value = v; return v; };
-  const cin = up('cCin'), pan = up('cPan'), gst = up('cGstin');
+  const pan = up('cPan'), gst = up('cGstin');
   const phone = normMobile(g('cPhone').value.trim());
   const amtRaw = g('cAmount').value.trim(), amt = Number(amtRaw);
   let ok = true;
   ok = setErr(g('cName'), 'ecName', g('cName').value.trim().length >= 3) && ok;
-  ok = setErr(g('cCin'), 'ecCin', CIN_RE.test(cin)) && ok;
   ok = setErr(g('cPan'), 'ecPan', PAN_RE.test(pan)) && ok;
   ok = setErr(g('cGstin'), 'ecGstin', gst === '' || GSTIN_RE.test(gst)) && ok;
   ok = setErr(g('cContact'), 'ecContact', g('cContact').value.trim().length >= 3) && ok;
@@ -758,14 +756,14 @@ function submitCompany(e) {
   ok = setErr(g('cAmount'), 'ecAmount', /^\d+$/.test(amtRaw) && amt >= 1) && ok;
   if (!ok) { const first = f.querySelector('.invalid'); if (first) first.focus(); return; }
   const purpose = g('cPurpose').value === 'Specific project' ? 'Specific project: ' + g('cProject').value : g('cPurpose').value;
-  company = { ref: newRef(), company: g('cName').value.trim(), cin: cin, pan: pan, gstin: gst, contact: g('cContact').value.trim(),
+  company = { ref: newRef(), company: g('cName').value.trim(), pan: pan, gstin: gst, contact: g('cContact').value.trim(),
     designation: g('cDesig').value.trim(), email: g('cEmail').value.trim(), mobile: phone, amount: amt, purpose: purpose,
     need80g: g('c80g').checked, needCsrPack: g('cCsrPack').checked };
   const payload = Object.assign({ form: 'company', website: (g('hpCompany') || {}).value || '' }, company);
   const yn = function (b) { return b ? 'Yes' : 'No'; };
   const subject = '[Company donation] ' + company.company + ' — ' + inr(company.amount) + ' — ' + company.ref;
   const body = 'To: Narain Dass Rastogi Charitable Trust\n\nCompany contribution details\n\n' +
-    'Company name: ' + company.company + '\nCIN: ' + company.cin + '\nPAN: ' + company.pan + '\nGSTIN: ' + (company.gstin || '-') + '\n' +
+    'Company name: ' + company.company + '\nPAN: ' + company.pan + '\nGSTIN: ' + (company.gstin || '-') + '\n' +
     'Contact person: ' + company.contact + '\nDesignation: ' + company.designation + '\nEmail: ' + company.email + '\nPhone: ' + company.mobile + '\n' +
     'Amount: ' + inr(company.amount) + '\nPurpose: ' + company.purpose + '\n' +
     'Need 80G receipt: ' + yn(company.need80g) + '\nNeed CSR documentation pack: ' + yn(company.needCsrPack) + '\n\nReference: ' + company.ref + '\n';
