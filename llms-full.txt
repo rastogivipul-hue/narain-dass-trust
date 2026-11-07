@@ -1,19 +1,19 @@
 # Narain Dass Rastogi Charitable Trust & NDR Schools, Kiratpur — Full Reference
 
-Canonical site: https://narain-dass-rastogi-trust.vercel.app/
+Canonical site: https://ndrtrust.org/
 Last updated: 27 October 2026
 Sources: the Principal's letter to the Trust on the school's history (dated 11 July 2026) and the Trust's donor-details document (registration and bank details).
 
 ## Pages
-- [Home](https://narain-dass-rastogi-trust.vercel.app/): overview, key school figures (school records, 2026), latest news.
-- [Our Story](https://narain-dass-rastogi-trust.vercel.app/story): founder Late Shri R. B. Rastogi, milestones 1990–2026, why Kiratpur (Census 2011), alumni stories.
-- [Schools & Faculty](https://narain-dass-rastogi-trust.vercel.app/schools): the three schools, UDISE+ names and codes, faculty, results, admissions enquiry.
-- [Campus](https://narain-dass-rastogi-trust.vercel.app/campus): photo gallery.
-- [Trust & Governance](https://narain-dass-rastogi-trust.vercel.app/trust): trustees, management committee, statutory registrations, verification links, transparency.
-- [News & Updates](https://narain-dass-rastogi-trust.vercel.app/news): dated updates, newest first.
-- [Support Us](https://narain-dass-rastogi-trust.vercel.app/support): donate with 80G receipt (KYC first), CSR partnership, volunteer & mentor, donor acknowledgements.
-- [Contact](https://narain-dass-rastogi-trust.vercel.app/contact): addresses, map, emails, enquiry form.
-- [Privacy Policy](https://narain-dass-rastogi-trust.vercel.app/privacy): how donor and enquiry data is handled (effective 27 October 2026).
+- [Home](https://ndrtrust.org/): overview, key school figures (school records, 2026), latest news.
+- [Our Story](https://ndrtrust.org/story): founder Late Shri R. B. Rastogi, milestones 1990–2026, why Kiratpur (Census 2011), alumni stories.
+- [Schools & Faculty](https://ndrtrust.org/schools): the three schools, UDISE+ names and codes, faculty, results, admissions enquiry.
+- [Campus](https://ndrtrust.org/campus): photo gallery.
+- [Trust & Governance](https://ndrtrust.org/trust): trustees, management committee, statutory registrations, verification links, transparency.
+- [News & Updates](https://ndrtrust.org/news): dated updates, newest first.
+- [Support Us](https://ndrtrust.org/support): donate with 80G receipt (KYC first), CSR partnership, volunteer & mentor, donor acknowledgements.
+- [Contact](https://ndrtrust.org/contact): addresses, map, emails, enquiry form.
+- [Privacy Policy](https://ndrtrust.org/privacy): how donor and enquiry data is handled (effective 27 October 2026).
 
 ## 1. The Trust
 - Legal name: Narain Dass Rastogi Charitable Trust (श्री नारायण दास रस्तोगी चैरिटेबल ट्रस्ट). Bank account name: NARAIN DAS RASTOGI CHARITABLE TRUST.
@@ -59,7 +59,7 @@ Late Shri R. B. Rastogi was born in Kiratpur (Bijnor) on 12 December 1932, son o
   - Sri Narayan Das Rastogi Balika Vidya Mandir J.H. School (girls, VI–VIII): 09030704734
   - Shri Narayan Das Rastogi Balika Vidya Mandir Inter College (girls, IX–XII): 09030704754
 - Address: Mohalla Jhanda, Kiratpur – 246731, District Bijnor, Uttar Pradesh. Email: ndrgicktp@gmail.com
-- Faculty list (names, roles, subjects): https://narain-dass-rastogi-trust.vercel.app/data/faculty.json
+- Faculty list (names, roles, subjects): https://ndrtrust.org/data/faculty.json
 
 ## 6. Donating
 - Donations and CSR funds are accepted only in the Trust's own account: NARAIN DAS RASTOGI CHARITABLE TRUST, Ujjivan Small Finance Bank, Noida Branch. Full account details are shown on the website after the donor completes the KYC step (name, PAN, address with PIN, mobile, email, amount, purpose).
