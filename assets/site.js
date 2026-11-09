@@ -333,7 +333,7 @@ function inr(n) { return '₹' + Number(n).toLocaleString('en-IN'); }
 function showPayment() {
   document.getElementById('payAmountLabel').textContent = inr(donor.amount);
   var big = Number(donor.amount) > 100000;
-  document.getElementById('bkAcc').textContent = big ? '2347110110055405' : '2347110110055404';
+  document.getElementById('bkAcc').textContent = big ? ACC_BIG : ACC_SMALL;
   var r = document.getElementById('bkRule');
   if (r) r.innerHTML = big
     ? '<span data-lang="en">Account 2 • for donations above ₹1,00,000</span><span data-lang="hi">खाता 2 • ₹1,00,000 से अधिक के दान के लिए</span>'
@@ -500,8 +500,9 @@ function submitEnquiry(e) {
 }
 
 /* ===== Donation options: UPI card, bank details by amount, monthly pledge, company / CSR =====
-   Account rule: up to ₹1,00,000 → …5404; above ₹1,00,000 → …5405 (bank transfer only). */
-const ACC_SMALL = '2347110110055404', ACC_BIG = '2347110110055405';
+   Account rule: up to ₹1,00,000 → …5404; above ₹1,00,000 → …5405 (bank transfer only).
+   Public pages show only the last 4 digits. Full numbers are not in this file. */
+const ACC_SMALL = 'XXXX XXXX 5404', ACC_BIG = 'XXXX XXXX 5405';
 const BANK_IFSC = 'UJVN0002347', BANK_ACC_NAME = 'NARAIN DAS RASTOGI CHARITABLE TRUST', BANK_BRANCH = 'Ujjivan Small Finance Bank, Noida Branch';
 const GSTIN_RE = /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$/;
 const MONTHS_EN = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -535,6 +536,12 @@ function bankRow(en, hi, value, mono, copy) {
     '<dt class="text-slate text-xs">' + LL(en, hi) + '</dt>' +
     '<dd class="flex items-center gap-2 min-w-0"><strong class="text-ink ' + (mono ? 'font-mono break-all' : 'break-words') + '">' + esc(value) + '</strong>' + (copy ? copyBtn(value) : '') + '</dd></div>';
 }
+function fullBankDetailsNote() {
+  return '<p class="text-[11px] text-slate mt-2">' + LL(
+    'For full bank transfer details, email <a href="mailto:' + TRUST_EMAIL + '" class="text-crimson hover:underline break-all">' + TRUST_EMAIL + '</a> or use the <a href="/contact" class="text-crimson hover:underline">contact form</a>.',
+    'पूरे बैंक ट्रांसफ़र विवरण के लिए <a href="mailto:' + TRUST_EMAIL + '" class="text-crimson hover:underline break-all">' + TRUST_EMAIL + '</a> पर ईमेल करें या <a href="/contact" class="text-crimson hover:underline">संपर्क फ़ॉर्म</a> का उपयोग करें।'
+  ) + '</p>';
+}
 /* Bank details for an amount (or both accounts with the rule when amount is unknown). */
 function bankHtml(amount, title) {
   const known = Number(amount) > 0;
@@ -546,18 +553,19 @@ function bankHtml(amount, title) {
       ? LL('Account 2 • for donations above ₹1,00,000', 'खाता 2 • ₹1,00,000 से अधिक के दान के लिए')
       : LL('Account 1 • for donations up to ₹1,00,000', 'खाता 1 • ₹1,00,000 तक के दान के लिए')) + '</p>' +
       '<dl class="mt-3 text-sm">' + bankRow('Account name', 'खाते का नाम', BANK_ACC_NAME, false, true) +
-      bankRow('Account number', 'खाता संख्या', accFor(amount), true, true) +
+      bankRow('Account number', 'खाता संख्या', accFor(amount), true, false) +
       bankRow('IFSC', 'IFSC', BANK_IFSC, true, true) +
       bankRow('Bank &amp; branch', 'बैंक व शाखा', BANK_BRANCH, false, false) + '</dl>';
   } else {
-    accRows = '<dl class="mt-3 text-sm">' + bankRow('Up to ₹1,00,000', '₹1,00,000 तक', ACC_SMALL, true, true) +
-      bankRow('Above ₹1,00,000', '₹1,00,000 से अधिक', ACC_BIG, true, true) +
+    accRows = '<dl class="mt-3 text-sm">' + bankRow('Up to ₹1,00,000', '₹1,00,000 तक', ACC_SMALL, true, false) +
+      bankRow('Above ₹1,00,000', '₹1,00,000 से अधिक', ACC_BIG, true, false) +
       bankRow('Account name', 'खाते का नाम', BANK_ACC_NAME, false, false) +
       bankRow('IFSC', 'IFSC', BANK_IFSC, true, true) +
       bankRow('Bank &amp; branch', 'बैंक व शाखा', BANK_BRANCH, false, false) + '</dl>';
   }
   return '<div class="text-xs font-bold uppercase tracking-wider text-crimson">' + head + '</div>' + accRows +
-    '<p class="text-[11px] text-slate mt-2">' + LL('Trust PAN: AAATN1994L', 'ट्रस्ट PAN: AAATN1994L') + '</p>';
+    '<p class="text-[11px] text-slate mt-2">' + LL('Trust PAN: AAATN1994L', 'ट्रस्ट PAN: AAATN1994L') + '</p>' +
+    fullBankDetailsNote();
 }
 /* UPI (only up to ₹1,00,000) + bank, side by side on wide screens. */
 function payDetailsHtml(amount, bankTitle, bankExtra) {
@@ -698,7 +706,7 @@ function downloadPledgeIcs() {
   const now = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
   const desc = 'Your monthly pledge to Narain Dass Rastogi Charitable Trust: ' + inr(p.amount) + ' on day ' + p.day + ' of each month.\n\n' +
     (UPI_VPA && !big ? 'UPI ID: ' + UPI_VPA + ' (payee shows as the Trust\'s Ujjivan merchant account). Enter the amount in your UPI app.\n\n' : '') +
-    'Bank transfer / standing instruction:\nAccount name: ' + BANK_ACC_NAME + '\nAccount number: ' + accFor(p.amount) + '\nIFSC: ' + BANK_IFSC + '\nBank: ' + BANK_BRANCH + '\n\n' +
+    'Bank transfer / standing instruction:\nAccount name: ' + BANK_ACC_NAME + '\nAccount number: ' + accFor(p.amount) + '\nIFSC: ' + BANK_IFSC + '\nBank: ' + BANK_BRANCH + '\nFor full bank transfer details, email ' + TRUST_EMAIL + ' or use the contact form.\n\n' +
     'After paying, email the UTR to ' + TRUST_EMAIL + ' quoting ' + p.ref + ' for your 80G receipt.\n' +
     'This is your own reminder. The Trust does not auto-debit your account.';
   const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Narain Dass Rastogi Charitable Trust//Monthly pledge//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
