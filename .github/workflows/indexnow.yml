@@ -1,0 +1,23 @@
+# Tells Bing and Yandex (IndexNow) about URLs in sitemap.xml after a push to main.
+# This workflow is not part of the Vercel build. continue-on-error and the script's
+# own exit 0 mean a timeout or a rejected ping cannot fail the deploy.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ping IndexNow with sitemap URLs
+        run: python3 scripts/indexnow.py || true

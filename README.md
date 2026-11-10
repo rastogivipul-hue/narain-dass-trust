@@ -62,4 +62,16 @@ Edit `data/faculty.json` (same fields per person). Do not add phone numbers, dat
 ## Photos
 Do not publish photos where children's faces are identifiable until parental consent is on file.
 
-_Last updated: 27 October 2026 (multi-page restructure)._
+_Last updated: 10 November 2026._
+
+## IndexNow
+`scripts/indexnow.py` reads `sitemap.xml` and POSTs the URLs to `https://api.indexnow.org/indexnow`. The public key file is the 32-character hex `.txt` at the site root. `.github/workflows/indexnow.yml` runs the script on every push to `main`. The script exits 0 even when the ping fails, and the workflow is `continue-on-error`, so a failure does not fail the Vercel deploy.
+
+## Faculty file
+`data/faculty.json` is public. Do not put editing notes in it. The fields for each person are the ones already in the file. Do not add phone numbers, dates of birth or home addresses.
+
+## Founder name
+The founder is only ever named R. B. Rastogi (Late Shri R. B. Rastogi; Hindi: स्व. श्री आर. बी. रस्तोगी). Do not expand the initials.
+
+## Donations from outside India
+The Trust does not hold FCRA registration. Donations are accepted only from Indian citizens and residents, from Indian bank accounts. An NRI may give only from an Indian NRO account.
