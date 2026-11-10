@@ -1,5 +1,4 @@
 {
-  "_instructions": "MODULAR FACULTY & ADMINISTRATION CONFIG — To add or update a teacher or admin staff member, simply edit an existing entry or append a new object to the 'facultyMembers' array below. Set 'photo' to '/images/faculty/filename.jpg' (or leave null to display an institutional monogram avatar) and set 'status' to 'verified' once their profile details are confirmed.",
   "lastUpdated": "2026-10-27",
   "academicSession": "2026–2027",
   "bannerNotice": {
@@ -13,7 +12,7 @@
     "institution": "Shri Narayan Das Rastogi Balika Vidya Mandir Inter College & Saraswati Shishu Mandir, Kiratpur (Bijnor)",
     "phone": "",
     "email": "ndrgicktp@gmail.com",
-    "quoteEn": "For over three decades, our sacred Vidya Mandir in Mohalla Jhanda, Kiratpur has stood as a beacon of affordable, value-rooted education—especially for daughters and children from underserved families of Bijnor district. With the renewed vision of Chairman Shri Subhash Rastogi, Senior Trustee Shri Ravinder Kumar Rastogi, and Trustee Shri Vipul Kumar Rastogi, our campus is entering a transformative era with pure 260-ft deep-borewell drinking water, upgraded computer literacy labs, and modern academic infrastructure.",
+    "quoteEn": "For over three decades, our sacred Vidya Mandir in Mohalla Jhanda, Kiratpur has stood as a beacon of affordable, value-rooted education—especially for daughters and children from underserved families of Bijnor district. With the renewed vision of Managing Trustee & Chairman Shri Subhash Rastogi, Trustee Shri Ravinder Kumar Rastogi, and Trustee and Modernization Lead Shri Vipul Kumar Rastogi, our campus is entering a transformative era with pure 260-ft deep-borewell drinking water, upgraded computer literacy labs, and modern academic infrastructure.",
     "quoteHi": "तीन दशकों से अधिक समय से, मोहल्ला झण्डा, कीरतपुर स्थित हमारा यह पावन विद्या मन्दिर जनपद बिजनौर की बेटियों एवं वंचित वर्ग के बच्चों के लिए संस्कारयुक्त एवं सुलभ शिक्षा का प्रमुख केंद्र रहा है। ट्रस्ट मण्डल के नूतन संकल्प एवं सहयोग से विद्यालय परिसर में शुद्ध पेयजल (२६० फीट सबमर्सिबल बोरवेल), कम्प्यूटर शिक्षा एवं आधुनिक शैक्षणिक सुविधाओं का निरंतर विस्तार किया जा रहा है।"
   },
   "facultyMembers": [

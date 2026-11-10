@@ -814,3 +814,38 @@ syncFlows();
 applyDonateHash();
 
 applyLanguage();
+
+/* Mobile donate bar sits under the page, not over it. The header stays sticky inside the scroller. */
+(function () {
+  var bar = document.getElementById('stickyDonate');
+  if (!bar) return;
+  var mq = window.matchMedia('(max-width: 767px)');
+  var wrap = null;
+  function layout() {
+    if (mq.matches) {
+      if (!wrap) {
+        wrap = document.createElement('div');
+        wrap.id = 'pageScroll';
+        var node = document.body.firstChild;
+        while (node) {
+          var next = node.nextSibling;
+          var id = node.id || '';
+          var tag = node.tagName;
+          if (node !== bar && id !== 'lightbox' && id !== 'dossierModal' && id !== 'ndrToast' && tag !== 'SCRIPT') {
+            wrap.appendChild(node);
+          }
+          node = next;
+        }
+        document.body.insertBefore(wrap, bar);
+      }
+      document.body.classList.add('donate-dock');
+    } else if (wrap) {
+      while (wrap.firstChild) document.body.insertBefore(wrap.firstChild, wrap);
+      wrap.remove();
+      wrap = null;
+      document.body.classList.remove('donate-dock');
+    }
+  }
+  layout();
+  if (mq.addEventListener) mq.addEventListener('change', layout);
+})();

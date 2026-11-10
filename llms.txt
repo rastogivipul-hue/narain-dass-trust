@@ -8,14 +8,14 @@
 ## Key facts
 - Principal: **Shri Devendra Singh** (from 1 August 2026). Vice Principal: Shri Vinish Kumar.
 - Founder: Late Shri R. B. Rastogi (1932–2003).
-- Board of Trustees: Shri Subhash Rastogi (Chairman & Managing Trustee; joined the Board in 2025 and heads the revival and growth of the school and the Trust), Shri Ravinder Kumar Rastogi, Shri Vipul Kumar Rastogi, Smt. Kanika Rastogi (Trustee – Creative Direction & Development).
+- Board of Trustees: Shri Subhash Rastogi (Managing Trustee & Chairman; joined the Board in 2025 and heads the revival and growth of the school and the Trust), Shri Ravinder Kumar Rastogi, Shri Vipul Kumar Rastogi (Trustee • Modernization Lead), Smt. Kanika Rastogi (Trustee – Creative Direction & Development).
 - UP Board ‘A’ grade for Intermediate results in 2010 and 2011. Peak enrolment 591 (2014).
 - PAN: `AAATN1994L`
 - Income-tax registration (12AB-equivalent), **provisional**, Section 332(8), Income-tax Act 2025: `AAATN1994LE20261`, tax years 2026–27 to 2028–29.
 - Donor deduction approval (80G-equivalent), **provisional**, Section 354(4), Income-tax Act 2025: `AAATN1994LF20261`, tax years 2026–27 to 2028–29.
 - MCA CSR-1: `CSR00117504` (SRN `AC5909859`).
 - NGO Darpan: `DL/2026/1118189`.
-- Donations: accepted only in the Trust's own account at Ujjivan Small Finance Bank, Noida Branch. Donors complete a KYC step at https://ndrtrust.org/support#donate before payment details are shown, so the Trust can file Form 10BD and issue the 80G receipt (Form 10BE). Cash above ₹2,000 is not eligible for 80G.
+- Donations: accepted only in the Trust's own account at Ujjivan Small Finance Bank, Noida Branch. Donors complete a KYC step at https://ndrtrust.org/support#donate before payment details are shown, so the Trust can file Form 10BD and issue the 80G receipt (Form 10BE). Cash above ₹2,000 is not eligible for 80G. The Trust does not hold FCRA registration. Donations are accepted only from Indian citizens and residents, paid from an Indian bank account. An NRI may give only from an Indian NRO account.
 - Trust office: 1/5430, Basti Harphool Singh, Sadar Bazar, Delhi – 110006. Email: naraindassrastogicharitabletrust@outlook.com
 - School: Mohalla Jhanda, Kiratpur – 246731, District Bijnor, U.P. Email: ndrgicktp@gmail.com
 
@@ -28,6 +28,9 @@
 - [News & Updates](https://ndrtrust.org/news): dated updates, newest first.
 - [Support Us](https://ndrtrust.org/support): donate with 80G receipt (KYC first), CSR partnership, volunteer & mentor, donor acknowledgements.
 - [Contact](https://ndrtrust.org/contact): addresses, map, emails, enquiry form.
+- [FAQ](https://ndrtrust.org/faq): donor, alumni and company questions on 80G, the UTR receipt, FCRA, cash, CSR, visits and volunteering.
+- [What your donation does](https://ndrtrust.org/impact): the three schools, 348 students, 15 teachers, 2 support staff, enrolment from 9 (1990) to 591 (2014) to 348 (2026), and what gifts are used for.
+- [CSR](https://ndrtrust.org/csr): CSR-1, provisional 12AB/80G, NGO Darpan, Schedule VII education, and how a company asks for documents.
 - [Privacy Policy](https://ndrtrust.org/privacy): how donor and enquiry data is handled (effective 27 October 2026).
 
 ## Verify
@@ -40,3 +43,13 @@
 - [Full reference](https://ndrtrust.org/llms-full.txt)
 - [Faculty JSON](https://ndrtrust.org/data/faculty.json)
 - [Website](https://ndrtrust.org/)
+
+## How to support
+- Donate at https://ndrtrust.org/support#donate. The donor gives name (as on PAN), PAN, address, PIN, mobile, email, amount and purpose. Payment details are shown after that. The donor then sends the UTR so the Trust can file Form 10BD and issue the 80G receipt (Form 10BE).
+- Payments go only to the Trust's own accounts at Ujjivan Small Finance Bank, Noida Branch, in the name NARAIN DAS RASTOGI CHARITABLE TRUST. One account is for gifts up to ₹1,00,000 and one for larger gifts. UPI ID UJJ83981845379@Ujjivan is for gifts up to ₹1,00,000. Account numbers are shown masked (last 4 digits) on the site.
+- Cash above ₹2,000 is not eligible for 80G.
+- The Trust does not hold FCRA registration. Donations are accepted only from Indian citizens and residents, paid from an Indian bank account. An NRI may give only from an Indian NRO account.
+- Purposes: general support, fee concession for girls, smart classroom, infrastructure (drinking water, sanitation, laboratories and classrooms), and CSR.
+- Companies: CSR-1 CSR00117504 (SRN AC5909859), NGO Darpan DL/2026/1118189. See https://ndrtrust.org/csr. Whether a gift counts towards a company's CSR obligation is for that company's CSR committee to decide.
+- Questions: https://ndrtrust.org/faq. What a gift supports: https://ndrtrust.org/impact.
+- Contact: naraindassrastogicharitabletrust@outlook.com, +91 7303678300. School: ndrgicktp@gmail.com.

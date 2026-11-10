@@ -1,7 +1,7 @@
 # Narain Dass Rastogi Charitable Trust & NDR Schools, Kiratpur — Full Reference
 
 Canonical site: https://ndrtrust.org/
-Last updated: 27 October 2026
+Last updated: 10 November 2026
 Sources: the Principal's letter to the Trust on the school's history (dated 11 July 2026) and the Trust's donor-details document (registration and bank details).
 
 ## Pages
@@ -13,6 +13,9 @@ Sources: the Principal's letter to the Trust on the school's history (dated 11 J
 - [News & Updates](https://ndrtrust.org/news): dated updates, newest first.
 - [Support Us](https://ndrtrust.org/support): donate with 80G receipt (KYC first), CSR partnership, volunteer & mentor, donor acknowledgements.
 - [Contact](https://ndrtrust.org/contact): addresses, map, emails, enquiry form.
+- [FAQ](https://ndrtrust.org/faq): donor, alumni and company questions on 80G, the UTR receipt, FCRA, cash, CSR, visits and volunteering.
+- [What your donation does](https://ndrtrust.org/impact): the three schools, 348 students, 15 teachers, 2 support staff, enrolment from 9 (1990) to 591 (2014) to 348 (2026), and what gifts are used for.
+- [CSR](https://ndrtrust.org/csr): CSR-1, provisional 12AB/80G, NGO Darpan, Schedule VII education, and how a company asks for documents.
 - [Privacy Policy](https://ndrtrust.org/privacy): how donor and enquiry data is handled (effective 27 October 2026).
 
 ## 1. The Trust
@@ -21,7 +24,7 @@ Sources: the Principal's letter to the Trust on the school's history (dated 11 J
 - Registered office: 1/5430, Basti Harphool Singh, Sadar Bazar, Delhi – 110006.
 - Email: naraindassrastogicharitabletrust@outlook.com
 - Founder: Late Shri R. B. Rastogi, lifelong head of the Trust.
-- Board of Trustees: Shri Subhash Rastogi (Chairman & Managing Trustee; joined the Board in 2025 and heads the revival and growth of the school and the Trust), Shri Ravinder Kumar Rastogi (Senior Trustee), Shri Vipul Kumar Rastogi (Trustee), Smt. Kanika Rastogi (Trustee – Creative Direction & Development; one of the new trust members).
+- Board of Trustees: Shri Subhash Rastogi (Managing Trustee & Chairman; joined the Board in 2025 and heads the revival and growth of the school and the Trust), Shri Ravinder Kumar Rastogi (Trustee), Shri Vipul Kumar Rastogi (Trustee • Modernization Lead), Smt. Kanika Rastogi (Trustee – Creative Direction & Development; one of the new trust members).
 - Educational society: Shri Narayandas Rastogi Aadarsh Shiksha Samiti. A School Management Committee has existed since January 1992.
 
 ## 2. Statutory status (as of October 2026)
@@ -64,7 +67,7 @@ Late Shri R. B. Rastogi was born in Kiratpur (Bijnor) on 12 December 1932, son o
 ## 6. Donating
 - Donations and CSR funds are accepted only in the Trust's own account: NARAIN DAS RASTOGI CHARITABLE TRUST, Ujjivan Small Finance Bank, Noida Branch. Full account details are shown on the website after the donor completes the KYC step (name, PAN, address with PIN, mobile, email, amount, purpose).
 - After paying, the donor sends the UTR/transaction reference by email from the website so the Trust can file Form 10BD and issue the 80G receipt (Form 10BE), or the equivalent forms under the Income-tax Act, 2025.
-- Cash donations above ₹2,000 are not eligible for 80G deduction.
+- Cash donations above ₹2,000 are not eligible for 80G deduction. The Trust does not hold FCRA registration. Donations are accepted only from Indian citizens and residents, paid from an Indian bank account. An NRI may give only from an Indian NRO account.
 - Purposes: General, Fee concession for girls, Smart classroom, Infrastructure, CSR.
 
 ## 7. Verify
@@ -85,3 +88,13 @@ Late Shri R. B. Rastogi was born in Kiratpur (Bijnor) on 12 December 1932, son o
 ## 10. Contact
 - School: Mohalla Jhanda, Kiratpur – 246731, District Bijnor, U.P. Email: ndrgicktp@gmail.com. Map: https://www.google.com/maps/search/?api=1&query=Narain+Dass+Rastogi+Inter+College+Kiratpur+Bijnor
 - Trust: naraindassrastogicharitabletrust@outlook.com
+
+## How to support
+- Donate at https://ndrtrust.org/support#donate. The donor gives name (as on PAN), PAN, address, PIN, mobile, email, amount and purpose. Payment details are shown after that. The donor then sends the UTR so the Trust can file Form 10BD and issue the 80G receipt (Form 10BE).
+- Payments go only to the Trust's own accounts at Ujjivan Small Finance Bank, Noida Branch, in the name NARAIN DAS RASTOGI CHARITABLE TRUST. One account is for gifts up to ₹1,00,000 and one for larger gifts. UPI ID UJJ83981845379@Ujjivan is for gifts up to ₹1,00,000. Account numbers are shown masked (last 4 digits) on the site.
+- Cash above ₹2,000 is not eligible for 80G.
+- The Trust does not hold FCRA registration. Donations are accepted only from Indian citizens and residents, paid from an Indian bank account. An NRI may give only from an Indian NRO account.
+- Purposes: general support, fee concession for girls, smart classroom, infrastructure (drinking water, sanitation, laboratories and classrooms), and CSR.
+- Companies: CSR-1 CSR00117504 (SRN AC5909859), NGO Darpan DL/2026/1118189. See https://ndrtrust.org/csr. Whether a gift counts towards a company's CSR obligation is for that company's CSR committee to decide.
+- Questions: https://ndrtrust.org/faq. What a gift supports: https://ndrtrust.org/impact.
+- Contact: naraindassrastogicharitabletrust@outlook.com, +91 7303678300. School: ndrgicktp@gmail.com.
