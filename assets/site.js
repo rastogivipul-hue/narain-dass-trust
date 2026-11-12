@@ -16,7 +16,7 @@ const TRUST_PAYEE_NAME = "Narain Dass Rastogi Charitable Trust";
 const TRUST_EMAIL = "naraindassrastogicharitabletrust@outlook.com";
 // Google Apps Script web app (stores every submission in the Trust's Google Sheet and emails TRUST_EMAIL).
 // Leave empty to fall back to the visitor's email app.
-const BACKEND_URL = "";
+const BACKEND_URL = "https://script.google.com/macros/s/AKfycbw7ooNuD5T9eSR32Z4UT4pvCPAysTbA3dFjCpug_bXsjGQMz3Zri82NmUi2qpnmrgTNJQ/exec";
 function newRef() {
   const d = new Date();
   return 'NDR-' + String(d.getFullYear()).slice(2) + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0') + '-' + Math.floor(1000 + Math.random() * 9000);
